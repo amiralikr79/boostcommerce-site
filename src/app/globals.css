@@ -1,0 +1,175 @@
+@import url('https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Surfaces */
+  --color-bg:               #f7f6f2;
+  --color-surface:          #f9f8f5;
+  --color-surface-2:        #fbfbf9;
+  --color-surface-offset:   #f0ede8;
+  --color-divider:          #dcd9d5;
+  --color-border:           #d4d1ca;
+
+  /* Text */
+  --color-text:             #1a1916;
+  --color-text-muted:       #6b6966;
+  --color-text-faint:       #b0aea9;
+  --color-text-inverse:     #f7f6f2;
+
+  /* Primary — deep forest green */
+  --color-primary:          #1e3d32;
+  --color-primary-hover:    #152c24;
+  --color-primary-active:   #0e1e19;
+  --color-primary-highlight:#ccd9d5;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(26,25,22,0.06);
+  --shadow-md: 0 4px 12px rgba(26,25,22,0.08);
+  --shadow-lg: 0 12px 32px rgba(26,25,22,0.12);
+
+  /* Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+}
+
+.dark {
+  --color-bg:               #141312;
+  --color-surface:          #1a1916;
+  --color-surface-2:        #1f1e1b;
+  --color-surface-offset:   #252320;
+  --color-divider:          #2c2b28;
+  --color-border:           #353330;
+
+  --color-text:             #e8e6e1;
+  --color-text-muted:       #8a8885;
+  --color-text-faint:       #5a5957;
+  --color-text-inverse:     #1a1916;
+
+  --color-primary:          #5a9e88;
+  --color-primary-hover:    #4a8a76;
+  --color-primary-active:   #3a7060;
+  --color-primary-highlight:#1e3530;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.4);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Satoshi', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Boska', Georgia, serif;
+  font-weight: 500;
+  line-height: 1.15;
+  text-wrap: balance;
+  color: var(--color-text);
+}
+
+p, li, figcaption {
+  text-wrap: pretty;
+  max-width: 72ch;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+::selection {
+  background: rgba(30, 61, 50, 0.15);
+  color: var(--color-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.container-wide {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.container-narrow {
+  max-width: 680px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container, .container-wide, .container-narrow {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container, .container-wide, .container-narrow {
+    padding-inline: 3rem;
+  }
+}
