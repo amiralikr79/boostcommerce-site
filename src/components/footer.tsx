@@ -1,132 +1,128 @@
 import Link from 'next/link';
+import { companies } from '@/lib/companies';
 
 export function Footer() {
   return (
     <footer
       style={{
+        position: 'relative',
         borderTop: '1px solid var(--color-border)',
         marginTop: '6rem',
-        padding: '3rem 0',
-        backgroundColor: 'var(--color-surface)',
+        padding: '4rem 0 2rem',
+        backgroundColor: 'var(--color-bg-elevated)',
+        overflow: 'hidden',
       }}
     >
-      <div className="container">
+      <div
+        aria-hidden="true"
+        className="orb orb-emerald"
+        style={{
+          width: 420,
+          height: 420,
+          left: '-12%',
+          bottom: '-55%',
+          opacity: 0.25,
+        }}
+      />
+
+      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr',
-            gap: '2.5rem',
-          }}
-          className="md:grid-cols-3"
+          style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '3rem' }}
+          className="md:grid-cols-4"
         >
-          {/* Brand */}
-          <div>
-            <p
-              style={{
-                fontFamily: 'Boska, Georgia, serif',
-                fontSize: '1rem',
-                fontWeight: '500',
-                color: 'var(--color-text)',
-                marginBottom: '0.625rem',
-              }}
-            >
-              Boost Commerce Group
-            </p>
+          <div style={{ gridColumn: 'span 1 / span 1' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', marginBottom: '1rem' }}>
+              <span
+                aria-hidden="true"
+                style={{
+                  width: 28,
+                  height: 28,
+                  borderRadius: 7,
+                  background: 'linear-gradient(135deg, var(--color-primary) 0%, #22d3ee 100%)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontFamily: 'JetBrains Mono, monospace',
+                  fontWeight: 700,
+                  color: '#04120d',
+                  fontSize: '0.75rem',
+                  letterSpacing: '-0.03em',
+                }}
+              >
+                B
+              </span>
+              <p
+                style={{
+                  fontFamily: 'Boska, Georgia, serif',
+                  fontSize: '1rem',
+                  fontWeight: 500,
+                  color: 'var(--color-text)',
+                }}
+              >
+                Boost Commerce Group
+              </p>
+            </div>
             <p
               style={{
                 fontSize: '0.875rem',
                 color: 'var(--color-text-muted)',
-                lineHeight: '1.6',
-                maxWidth: '28ch',
+                lineHeight: 1.6,
+                maxWidth: '32ch',
               }}
             >
-              British Columbia holding company. Building focused businesses that last.
+              A British Columbia holding company operating AI-native digital
+              businesses. Permanent capital. Portfolio capped at 10.
+            </p>
+            <p
+              className="mono"
+              style={{
+                marginTop: '1rem',
+                fontSize: '0.75rem',
+                color: 'var(--color-text-faint)',
+                letterSpacing: '0.06em',
+              }}
+            >
+              NORTH VANCOUVER · BC · CA
             </p>
           </div>
 
-          {/* Nav links */}
-          <div>
-            <p
-              style={{
-                fontSize: '0.75rem',
-                fontWeight: '500',
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                color: 'var(--color-text-faint)',
-                marginBottom: '0.75rem',
-              }}
-            >
-              Site
-            </p>
-            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              {[
-                { href: '/', label: 'Home' },
-                { href: '/companies', label: 'Portfolio' },
-                { href: '/insights', label: 'Insights' },
-                { href: '/leadership', label: 'Leadership' },
-                { href: '/contact', label: 'Contact' },
-              ].map((l) => (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  style={{
-                    fontSize: '0.875rem',
-                    color: 'var(--color-text-muted)',
-                    textDecoration: 'none',
-                    transition: 'color 0.15s ease',
-                  }}
-                >
-                  {l.label}
-                </Link>
-              ))}
-            </nav>
-          </div>
+          <FooterCol title="Site">
+            <FooterLink href="/">Home</FooterLink>
+            <FooterLink href="/companies">Portfolio</FooterLink>
+            <FooterLink href="/insights">Insights</FooterLink>
+            <FooterLink href="/leadership">Leadership</FooterLink>
+            <FooterLink href="/contact">Contact</FooterLink>
+          </FooterCol>
 
-          {/* Portfolio links */}
-          <div>
-            <p
-              style={{
-                fontSize: '0.75rem',
-                fontWeight: '500',
-                textTransform: 'uppercase',
-                letterSpacing: '0.08em',
-                color: 'var(--color-text-faint)',
-                marginBottom: '0.75rem',
-              }}
+          <FooterCol title="Portfolio">
+            {companies.map((c) => (
+              <FooterLink key={c.slug} href={`/companies/${c.slug}`}>
+                {c.name}
+              </FooterLink>
+            ))}
+          </FooterCol>
+
+          <FooterCol title="Elsewhere">
+            <FooterLink href="mailto:hello@boostcommerce.ca" external>
+              hello@boostcommerce.ca
+            </FooterLink>
+            <FooterLink
+              href="https://www.linkedin.com/in/amirali-karimi-405766199"
+              external
             >
-              Portfolio
-            </p>
-            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              {[
-                { href: 'https://bcprivateloans.ca', label: 'BCPrivateLoans.ca' },
-                { href: 'https://bcmedicalaccess.ca', label: 'BCMedicalAccess.ca' },
-                { href: 'https://zerolawyer.ca', label: 'ZeroLawyer.ca' },
-                { href: 'https://bcindustrialsupply.ca', label: 'BCIndustrialSupply.ca' },
-              ].map((l) => (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    fontSize: '0.875rem',
-                    color: 'var(--color-text-muted)',
-                    textDecoration: 'none',
-                    transition: 'color 0.15s ease',
-                  }}
-                >
-                  {l.label}
-                </a>
-              ))}
-            </nav>
-          </div>
+              LinkedIn (Founder)
+            </FooterLink>
+            <FooterLink href="/sitemap.xml" external>
+              Sitemap
+            </FooterLink>
+          </FooterCol>
         </div>
+
+        <hr className="hairline" style={{ marginTop: '3rem' }} />
 
         <div
           style={{
-            marginTop: '3rem',
-            paddingTop: '1.5rem',
-            borderTop: '1px solid var(--color-divider)',
+            marginTop: '1.5rem',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -134,19 +130,91 @@ export function Footer() {
             gap: '0.75rem',
           }}
         >
-          <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-faint)' }}>
-            &copy; {new Date().getFullYear()} Boost Commerce Group. British Columbia, Canada.
+          <p
+            className="mono"
+            style={{
+              fontSize: '0.75rem',
+              color: 'var(--color-text-faint)',
+              letterSpacing: '0.04em',
+            }}
+          >
+            © {new Date().getFullYear()} BOOST COMMERCE GROUP INC.
           </p>
-          <p style={{ fontSize: '0.8125rem', color: 'var(--color-text-faint)' }}>
-            <a
-              href="mailto:hello@boostcommerce.ca"
-              style={{ color: 'var(--color-text-faint)', textDecoration: 'none' }}
-            >
-              hello@boostcommerce.ca
-            </a>
+          <p
+            className="mono"
+            style={{
+              fontSize: '0.75rem',
+              color: 'var(--color-text-faint)',
+              letterSpacing: '0.04em',
+            }}
+          >
+            BUILT WITH AI · HELD FOREVER
           </p>
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterCol({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div>
+      <p
+        className="mono"
+        style={{
+          fontSize: '0.7rem',
+          fontWeight: 500,
+          textTransform: 'uppercase',
+          letterSpacing: '0.12em',
+          color: 'var(--color-text-faint)',
+          marginBottom: '1rem',
+        }}
+      >
+        {title}
+      </p>
+      <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+        {children}
+      </nav>
+    </div>
+  );
+}
+
+function FooterLink({
+  href,
+  children,
+  external,
+}: {
+  href: string;
+  children: React.ReactNode;
+  external?: boolean;
+}) {
+  const style: React.CSSProperties = {
+    fontSize: '0.875rem',
+    color: 'var(--color-text-muted)',
+    textDecoration: 'none',
+    transition: 'color 0.15s ease',
+  };
+  if (external) {
+    return (
+      <a
+        href={href}
+        style={style}
+        target={href.startsWith('http') ? '_blank' : undefined}
+        rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+      >
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} style={style}>
+      {children}
+    </Link>
   );
 }
