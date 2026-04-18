@@ -86,12 +86,12 @@ export default function AcquisitionsPage() {
               maxWidth: '18ch',
             }}
           >
-            What we acquire &mdash; and what we do not.
+            What we acquire, and what we do not.
           </h1>
           <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '62ch', lineHeight: 1.65, marginBottom: '2rem' }}>
             BCG operates a capped portfolio of ten focused digital businesses.
             Four slots are filled. Six remain open. If your business fits the
-            criteria below, the route is direct &mdash; one email, no brokers,
+            criteria below, the route is direct, one email, no brokers,
             no auctions, no IOI theatre.
           </p>
           <a
@@ -230,9 +230,9 @@ export default function AcquisitionsPage() {
           <ol style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {[
               { n: '01', Icon: Mail, title: 'Intro email', body: 'One paragraph: what the business is, last-12-months revenue, why you are open to sale. No NDA required for this step.' },
-              { n: '02', Icon: Target, title: 'Fit review &mdash; 48 hours', body: 'We confirm fit or pass. If we pass we tell you why. If we fit we send a short data-room request.' },
-              { n: '03', Icon: Clock, title: 'Diligence &mdash; 21 days', body: 'Books, analytics, platform risk, compliance, content review. Under mutual NDA. Direct line to the founder throughout.' },
-              { n: '04', Icon: Scale, title: 'Close &mdash; 7 days', body: 'Purchase agreement, asset transfer, domain + accounts handover. Payment at close, wire same day.' },
+              { n: '02', Icon: Target, title: 'Fit review, 48 hours', body: 'We confirm fit or pass. If we pass we tell you why. If we fit we send a short data-room request.' },
+              { n: '03', Icon: Clock, title: 'Diligence, 21 days', body: 'Books, analytics, platform risk, compliance, content review. Under mutual NDA. Direct line to the founder throughout.' },
+              { n: '04', Icon: Scale, title: 'Close, 7 days', body: 'Purchase agreement, asset transfer, domain + accounts handover. Payment at close, wire same day.' },
             ].map((s) => (
               <li key={s.n} style={{ ...panel, display: 'grid', gap: '1.25rem', gridTemplateColumns: 'auto auto 1fr', alignItems: 'center' }}>
                 <span style={{ fontFamily: mono, fontSize: '1.25rem', color: 'var(--color-text-faint)' }}>{s.n}</span>
@@ -278,7 +278,7 @@ export default function AcquisitionsPage() {
             </h2>
             <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.65, marginBottom: '2rem', maxWidth: '62ch' }}>
               If you are a broker representing a fit business, we still take
-              the intro &mdash; but we do not pay broker fees. The seller gets
+              the intro, but we do not pay broker fees. The seller gets
               the full number.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>

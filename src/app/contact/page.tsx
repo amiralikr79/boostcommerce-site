@@ -96,7 +96,7 @@ export default function ContactPage() {
           </h1>
           <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '55ch', lineHeight: 1.65 }}>
             We read everything. We respond when we can add value. Use the
-            category that fits &mdash; it routes to the right mailbox faster.
+            category that fits, it routes to the right mailbox faster.
           </p>
         </div>
       </section>
@@ -238,7 +238,7 @@ export default function ContactPage() {
                     marginTop: 'auto',
                   }}
                 >
-                  Write &mdash; subject: {it.subject} <ArrowUpRight size={13} />
+                  Write, subject: {it.subject} <ArrowUpRight size={13} />
                 </p>
               </a>
             ))}

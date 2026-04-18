@@ -93,7 +93,7 @@ export default function CompaniesPage() {
           <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '60ch', lineHeight: 1.65 }}>
             BCG operates a capped portfolio of ten focused digital businesses.
             Four slots are filled today. Six remain open and we are selective
-            about who fills them &mdash; each unit must solve a real searchable
+            about who fills them, each unit must solve a real searchable
             problem, reach $1k/mo within twelve months, and operate without
             full-time employees.
           </p>

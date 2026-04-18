@@ -154,7 +154,7 @@ export default function LeadershipPage() {
           <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '60ch', lineHeight: 1.65 }}>
             Boost Commerce Group is private, founder-owned, and governed by a
             four-layer model designed to support a ten-unit portfolio at the
-            standard we set &mdash; without full-time headcount at the holdco
+            standard we set, without full-time headcount at the holdco
             level.
           </p>
         </div>
@@ -164,27 +164,50 @@ export default function LeadershipPage() {
       <section style={{ paddingBlock: 'clamp(3rem, 6vw, 5rem)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container">
           <div
-            style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2rem', alignItems: 'start' }}
-            className="md:grid-cols-[280px_1fr]"
+            style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2.5rem', alignItems: 'start' }}
+            className="md:grid-cols-[300px_1fr]"
           >
             <div
               style={{
-                aspectRatio: '1 / 1',
+                aspectRatio: '4 / 5',
                 borderRadius: 'var(--radius-lg)',
+                overflow: 'hidden',
+                position: 'relative',
                 background:
                   'linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--color-text-inverse)',
-                fontFamily: 'Boska, Georgia, serif',
-                fontSize: 'clamp(4rem, 10vw, 7rem)',
-                fontWeight: 500,
-                letterSpacing: '-0.02em',
                 boxShadow: 'var(--shadow-md)',
               }}
             >
-              AK
+              <span
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'var(--color-text-inverse)',
+                  fontFamily: 'Boska, Georgia, serif',
+                  fontSize: 'clamp(4rem, 10vw, 7rem)',
+                  fontWeight: 500,
+                  letterSpacing: '-0.02em',
+                }}
+              >
+                AK
+              </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/founder.jpg"
+                alt="Amirali Karimi, founder of Boost Commerce Group"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  objectPosition: 'center 25%',
+                }}
+              />
             </div>
             <div>
               <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Founder</p>
@@ -197,26 +220,37 @@ export default function LeadershipPage() {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem', marginBottom: '2rem' }}>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
-                  I founded Boost Commerce Group in 2025 because I kept finding
-                  the same pattern in British Columbia: real problems, real
-                  search demand, no serious operator. Private lending, medical
-                  navigation, legal templates, industrial supply &mdash; every
-                  one had a broker funnel or a directory of SEO farms where a
-                  focused operator should have been.
+                  I am a British Columbia founder who did not want to work at
+                  a fund, did not want to sprint to an exit, and did not want
+                  to run a rollup of a hundred companies. Boost Commerce
+                  Group is the holding company I built instead of any of those.
                 </p>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  I chose BC because the opportunity is local and so am I. North
-                  Vancouver is where the units are licensed, compliant, and
-                  taxed. The province has a regulatory surface area that
-                  rewards operators who take boundaries seriously &mdash;
-                  exactly the kind of work BCG is set up to do.
+                  I run BCG with zero full time employees. The stack is three
+                  layers. ChatGPT Projects holds the context. Manus does the
+                  execution. Claude handles the review. A founder plus the
+                  stack is the entire operating company, and the four units
+                  in the portfolio all run on that same architecture. The
+                  portfolio cap is ten because a founder plus the stack can
+                  supervise ten units at the standard we set, and not much
+                  more than ten.
                 </p>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  Permanent capital is the part that matters most. I do not
-                  raise external money because the clock external money brings
-                  would undo every other choice we make. No clock, no
-                  extractive pricing, no sprint-hiring, no stretching units
-                  past their actual fit. Ten slots, held indefinitely.
+                  I built BCG in North Vancouver because I live here. The
+                  regulatory surface in BC is clean, the problems are
+                  unambiguously local, and the operators I respect live
+                  within a two hour drive. The unit sites are domiciled,
+                  compliant, and taxed in the province. BCG is not
+                  pretending to be a global firm from a mailbox.
+                </p>
+                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
+                  I chose permanent capital because every clock I have seen
+                  other holding companies run on eventually distorted the
+                  decisions those companies made. Without a clock, pricing
+                  is fair, hiring is patient, and the problems we pick are
+                  the ones that will still be problems in twenty years. I
+                  would rather own four good units for decades than forty
+                  average units for seven years. Ten slots, held indefinitely.
                 </p>
               </div>
 
