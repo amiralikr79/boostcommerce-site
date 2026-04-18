@@ -40,7 +40,7 @@ const layers = [
     Icon: ShieldCheck,
     body: 'The governing body of Boost Commerce Group. Independent oversight for material capital decisions.',
     bullets: [
-      'Amirali Karimi \u2014 Founder, CEO, Chair',
+      'Amirali Karimi (Founder, CEO, Chair)',
       'Independent observer seat (reserved)',
       'Quarterly governance review',
     ],
@@ -60,11 +60,11 @@ const layers = [
     n: 'LAYER 03',
     title: 'AI operating stack',
     Icon: Brain,
-    body: 'The three-role stack \u2014 brain, hands, eyes \u2014 that lets a ten-unit portfolio run without full-time employees.',
+    body: 'The three-role stack, brain, hands, eyes, that lets a ten-unit portfolio run without full-time employees.',
     bullets: [
-      'ChatGPT Projects \u2014 strategy and memory',
-      'Manus \u2014 multi-hour execution',
-      'Claude \u2014 review and compliance',
+      'ChatGPT Projects, strategy and memory',
+      'Manus, multi-hour execution',
+      'Claude, review and compliance',
     ],
   },
   {
@@ -74,7 +74,7 @@ const layers = [
     body: 'Legal, accounting, and compliance partners. Boundaries enforced before scale.',
     bullets: [
       'ZeroLawyer + external Canadian counsel',
-      'Accounting & tax \u2014 BC-licensed firm',
+      'Accounting & tax, BC-licensed firm',
       'Privacy & compliance review quarterly',
     ],
   },
