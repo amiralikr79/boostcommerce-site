@@ -12,6 +12,30 @@ export interface Insight {
 
 export const allInsights: Insight[] = [
   {
+    slug: 'my-employees-are-claude',
+    title: 'My employees are Claude',
+    excerpt:
+      'The labour cost problem was never talent. It was supervision. When the cost of a competent reviewer fell to almost nothing, the shape of a small business changed with it.',
+    date: 'April 2026',
+    category: 'Thesis',
+    readTime: '6 min read',
+    publishedISO: '2026-04-18',
+    updatedISO: '2026-04-18',
+    body: [
+      'The labour cost problem was never talent. It was supervision. What shifted in the last eighteen months is the cost of a competent review, and when that cost fell, the entire shape of a small business shifted with it.',
+      'For most of the twentieth century, a business was a cage of people built around a task. The task stayed the same for decades. The cage around it grew. By the time the cage was finished, nobody inside it could remember what the task had been. This is how you end up with ten people producing five people of output at fifteen people of cost. The cage is the reason.',
+      'Every knowledge worker I know is in one of two moods right now. They think AI is a toy, or they think AI is a threat. Both views are wrong. AI is an employee. It is not a very senior employee. It is a brilliant junior who never sleeps, never asks for equity, and will run the same task ten thousand times without getting bored once.',
+      'Every workflow decomposes into three roles. Strategy. Execution. Review. You used to hire for each. Strategy was a founder. Execution was an operator. Review was a manager. Three chairs, minimum. Often ten. What AI did was make the middle chair almost free, and the other two cheaper than anyone in the old economy wants to admit.',
+      'Boost Commerce Group is a holding company of four focused digital businesses. It has zero full time employees. Claude is the part of the stack that did the most to make that possible. Not because Claude is the most verbose model. Because Claude is the reviewer. Every piece of code that ships, every piece of content that goes to a customer, every compliance boundary that gets tested, runs through Claude before it leaves the building.',
+      'Run the arithmetic. A competent reviewer in Canada costs one hundred and twenty thousand dollars a year, all in. Claude at my usage runs about one hundred dollars a month. The savings are not the headline. The speed is. A human reviewer takes twenty four hours to turn around a document. Claude takes twenty four seconds. Twenty four hours to twenty four seconds is not a productivity improvement. It is a change in the nature of time.',
+      'The mistake most founders make with AI is treating it as a tool. A tool is something you use. An employee is something you delegate to. When you start delegating to Claude the way you would delegate to a junior you respect, the output changes. You stop rewriting the prompt. You start handing over context, constraints, and a standard of review. The work scales with the quality of the delegation, exactly like a human.',
+      'Every business that still runs a twenty person operations team is running on the nineteen ninety six labour model in a twenty twenty six market. Most of them have not noticed. Some will not notice until a five person competitor eats their lunch. The new math is simple. One operator, one model, ten portfolio units. That is the BCG configuration. It is not a forecast. It is what I am running right now.',
+      'Of the frontier models, Claude is the one I trust with judgment. Others are better at generation. Claude is better at saying no. It pushes back on bad reasoning. It flags claims that need a source. It refuses to ship content that crosses a compliance line even when you want it to. A reviewer that never caves is the kind of employee you cannot find at any salary. Claude is that employee.',
+      'The cost of labour was always a proxy for the cost of judgment. What you were paying your operators for was not execution. It was the ability to say no to bad work. When the price of a competent no falls to almost nothing, the number of chairs in the middle of your org chart falls with it. What remains is a founder, a model, and the problems they choose to solve together.',
+      'I do not think AI will replace employees. I think it will replace the reason anyone ever needed twenty of them. That is a different and more powerful claim. The best founders I know this year are not building AI companies. They are building companies that could not have existed before AI, which is something else entirely. The ones who figure this out early will compound for a decade before the rest of the market notices. The employee in the next office is already the agent on your desk. You either make peace with that now, or you pay twenty salaries to people who will figure it out before you do.',
+    ],
+  },
+  {
     slug: 'permanent-capital-thesis',
     title: 'Why we hold indefinitely',
     excerpt:
