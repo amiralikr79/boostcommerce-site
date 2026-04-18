@@ -4,7 +4,7 @@ import { Mail, Linkedin, Download, ArrowUpRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Press & Media',
   description:
-    'Press kit, facts, and founder availability for Boost Commerce Group — a British Columbia holding company acquiring focused digital businesses with permanent capital.',
+    'Press kit, facts, and founder availability for Boost Commerce Group, a British Columbia holding company acquiring focused digital businesses with permanent capital.',
   alternates: { canonical: 'https://www.boostcommerce.ca/press' },
 };
 

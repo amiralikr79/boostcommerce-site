@@ -5,7 +5,7 @@ import { Check, X, Mail, ArrowUpRight, Target, Clock, Scale } from 'lucide-react
 export const metadata: Metadata = {
   title: 'Acquisitions',
   description:
-    'What Boost Commerce Group acquires, what we do not, and how the process works. BC-focused digital businesses, $5k–$50k/mo revenue, permanent capital, no broker middlemen.',
+    'What Boost Commerce Group acquires, what we do not, and how the process works. BC-focused digital businesses, $5k to $50k/mo revenue, permanent capital, no broker middlemen.',
   alternates: { canonical: 'https://www.boostcommerce.ca/acquisitions' },
 };
 
@@ -36,7 +36,7 @@ const gridBg: React.CSSProperties = {
 
 const fit = [
   { label: 'Geography', value: 'British Columbia, Canada (remote OK if the revenue is BC)' },
-  { label: 'Revenue', value: '$5,000 – $50,000 / month, trailing 6 months' },
+  { label: 'Revenue', value: '$5,000 to $50,000 / month, trailing 6 months' },
   { label: 'Model', value: 'Digital-only. Directory, marketplace, template, lead-gen, content-product' },
   { label: 'Team', value: 'Zero or one operator. We replace employees with the AI stack.' },
   { label: 'Tenure', value: 'Two or more years in market. We avoid pre-PMF bets.' },
@@ -47,7 +47,7 @@ const fit = [
 
 const structure = [
   { title: 'All-cash, no earn-out', body: 'We pay cash at close. No seller financing. No seller note. No three-year earn-out chained to your next life.' },
-  { title: '3–5x SDE, case by case', body: 'We underwrite to stable SDE with AI-stack substitution applied. Premiums for clean books, regulatory moat, or recurring revenue.' },
+  { title: '3 to 5x SDE, case by case', body: 'We underwrite to stable SDE with AI-stack substitution applied. Premiums for clean books, regulatory moat, or recurring revenue.' },
   { title: '30-day diligence', body: 'Books, traffic, compliance, and platform risk. If diligence is clean, we close in 30 days.' },
   { title: 'Permanent ownership', body: 'We do not flip. If we acquire your business we hold it indefinitely. The brand and the domain stay.' },
 ];

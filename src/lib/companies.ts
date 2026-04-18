@@ -49,11 +49,11 @@ export const companies: Company[] = [
     summary:
       'Connects British Columbia borrowers with vetted private mortgage lenders across 16 cities. Rates from 5.99%, terms in plain English.',
     description:
-      'BCPrivateLoans is a lender-match platform built on one observation: the private mortgage market in BC is opaque, broker-gated, and overwhelming for borrowers. We bring the catalogue into the open — rate ranges, lender types, and application mechanics — so first-time and bridge borrowers can walk in informed.',
+      'BCPrivateLoans is a lender-match platform built on one observation: the private mortgage market in BC is opaque, broker-gated, and overwhelming for borrowers. We bring the catalogue into the open (rate ranges, lender types, and application mechanics) so first-time and bridge borrowers can walk in informed.',
     problem:
       'Private lending in BC runs through a broker funnel that charges for introductions borrowers could often make themselves. Rate sheets are guarded. Borrowers sign expensive terms because they never see the comparison.',
     approach:
-      'We publish transparent rate bands by lender category, match borrowers by scenario, and handle the first-round triage so underwriting gets a clean file. Revenue comes from lender placements — borrowers pay nothing to compare.',
+      'We publish transparent rate bands by lender category, match borrowers by scenario, and handle the first-round triage so underwriting gets a clean file. Revenue comes from lender placements, borrowers pay nothing to compare.',
     stats: [
       { label: 'Active lenders', value: '15+' },
       { label: 'Cities covered', value: '16' },
@@ -98,7 +98,7 @@ export const companies: Company[] = [
     problem:
       '1.2M+ British Columbians are on a specialist waitlist. Private options exist but are fragmented, poorly documented, and often marketed with more confidence than their licensing supports. Patients need a plain map.',
     approach:
-      'We maintain a structured directory of licensed BC private clinics, cross-border partners, and the procedure-level economics of each. Every listing is sourced and dated. No referral fees — we sell nothing to the clinics.',
+      'We maintain a structured directory of licensed BC private clinics, cross-border partners, and the procedure-level economics of each. Every listing is sourced and dated. No referral fees, we sell nothing to the clinics.',
     stats: [
       { label: 'Addressable patients', value: '1.2M+' },
       { label: 'Clinics documented', value: '80+' },
@@ -139,9 +139,9 @@ export const companies: Company[] = [
     summary:
       'Legal document templates for Canadian founders and small businesses. Province-aware, reviewed annually, priced per document.',
     description:
-      'ZeroLawyer sells legal templates for routine Canadian business needs — NDAs, contractor agreements, shareholder agreements, privacy policies — in province-aware variants. Every template is written by a Canadian lawyer and reviewed annually.',
+      'ZeroLawyer sells legal templates for routine Canadian business needs (NDAs, contractor agreements, shareholder agreements, privacy policies) in province-aware variants. Every template is written by a Canadian lawyer and reviewed annually.',
     problem:
-      "Founders pay $500–$2,000 for documents the lawyer's office adapted from a template. Small businesses either overpay or skip the document entirely. Off-the-shelf US templates don't match Canadian provincial law.",
+      "Founders pay $500 to $2,000 for documents the lawyer's office adapted from a template. Small businesses either overpay or skip the document entirely. Off-the-shelf US templates don't match Canadian provincial law.",
     approach:
       'A library of Canadian-lawyer-drafted, province-aware templates priced per document. No subscription. Annual legal review baked into the price. Founders spend $49, not $1,200.',
     stats: [
@@ -184,7 +184,7 @@ export const companies: Company[] = [
     summary:
       'A structured directory of 578+ BC industrial suppliers across 165+ categories. Built for contractors and procurement, not SEO farms.',
     description:
-      'BCIndustrialSupply is a no-fluff directory of industrial suppliers across British Columbia. Contractors and procurement managers use it to find suppliers by category, region, and capability. Suppliers list themselves — verification is manual.',
+      'BCIndustrialSupply is a no-fluff directory of industrial suppliers across British Columbia. Contractors and procurement managers use it to find suppliers by category, region, and capability. Suppliers list themselves, verification is manual.',
     problem:
       'The existing directories are SEO farms packed with dead links, paid placements, and duplicate listings. Procurement managers waste hours hunting for a supplier who actually answers the phone.',
     approach:

@@ -639,7 +639,7 @@ export default function Home() {
               </h2>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.65, marginBottom: '2rem' }}>
                 We read everything. Operators, founders of candidate units, and
-                legal/accounting counsel — if you fit one of the ten slots or
+                legal/accounting counsel, if you fit one of the ten slots or
                 want to run one, send a note.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
