@@ -65,8 +65,56 @@ export default async function InsightDetail({
 
   const others = allInsights.filter((i) => i.slug !== essay.slug).slice(0, 2);
 
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: essay.title,
+    description: essay.excerpt,
+    datePublished: essay.publishedISO,
+    dateModified: essay.updatedISO,
+    author: {
+      '@type': 'Person',
+      name: 'Amirali Karimi',
+      url: 'https://www.boostcommerce.ca/leadership',
+      sameAs: ['https://www.linkedin.com/in/amirali-karimi-405766199'],
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Boost Commerce Group',
+      url: 'https://www.boostcommerce.ca',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.boostcommerce.ca/favicon.svg',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://www.boostcommerce.ca/insights/${essay.slug}`,
+    },
+    articleSection: essay.category,
+    inLanguage: 'en-CA',
+  };
+
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.boostcommerce.ca' },
+      { '@type': 'ListItem', position: 2, name: 'Insights', item: 'https://www.boostcommerce.ca/insights' },
+      { '@type': 'ListItem', position: 3, name: essay.title, item: `https://www.boostcommerce.ca/insights/${essay.slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <article>
         <section style={{ borderBottom: '1px solid var(--color-border)' }}>
           <div
@@ -84,6 +132,10 @@ export default async function InsightDetail({
               <span style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)' }}>{essay.date}</span>
               <span style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)' }}>&middot;</span>
               <span style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)' }}>{essay.readTime}</span>
+              <span style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)' }}>&middot;</span>
+              <span style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)' }}>
+                Updated {essay.updatedISO}
+              </span>
             </div>
             <h1
               style={{

@@ -81,8 +81,44 @@ const layers = [
 ];
 
 export default function LeadershipPage() {
+  const personLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Amirali Karimi',
+    jobTitle: 'Founder, CEO & Chair',
+    url: 'https://www.boostcommerce.ca/leadership',
+    sameAs: ['https://www.linkedin.com/in/amirali-karimi-405766199'],
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Boost Commerce Group',
+      url: 'https://www.boostcommerce.ca',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'North Vancouver',
+      addressRegion: 'BC',
+      addressCountry: 'CA',
+    },
+  };
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.boostcommerce.ca' },
+      { '@type': 'ListItem', position: 2, name: 'Leadership', item: 'https://www.boostcommerce.ca/leadership' },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <section style={{ position: 'relative', overflow: 'hidden', borderBottom: '1px solid var(--color-border)' }}>
         <div style={{ position: 'absolute', inset: 0, ...gridBg, opacity: 0.5, pointerEvents: 'none' }} />
         <div

@@ -6,6 +6,8 @@ export interface Insight {
   category: string;
   readTime: string;
   body: string[];
+  publishedISO: string;
+  updatedISO: string;
 }
 
 export const allInsights: Insight[] = [
@@ -17,6 +19,8 @@ export const allInsights: Insight[] = [
     date: 'March 2026',
     category: 'Thesis',
     readTime: '6 min read',
+    publishedISO: '2026-03-10',
+    updatedISO: '2026-03-10',
     body: [
       'Most small-business buyers are on a clock. A private-equity fund has a seven-year window. A search fund has an acquisition thesis and an exit. Even a bootstrapped founder usually plans to sell to somebody, someday. The clock is the hidden operator behind every decision that firm makes.',
       'Boost Commerce Group is built to remove the clock. We do not raise external capital. We do not underwrite to an exit multiple. Every unit we acquire, we acquire under the assumption that we will own it in 2040 and somebody competent will operate it in 2055. That single change — no pressure to exit — propagates through every other decision the unit makes.',
@@ -35,6 +39,8 @@ export const allInsights: Insight[] = [
     date: 'February 2026',
     category: 'Operations',
     readTime: '7 min read',
+    publishedISO: '2026-02-14',
+    updatedISO: '2026-02-14',
     body: [
       "Every BCG unit is operated by the same three-layer stack. No unit has full-time employees. Every workflow that used to demand an operations hire has been decomposed into three roles: brain, hands, eyes. Each role is owned by a specific AI system, because each system is disproportionately good at one part of the job.",
       "Layer 01 — BRAIN. ChatGPT Projects holds strategy, memory, and context. Every unit has its own Project with the founding thesis, the compliance boundaries, the current roadmap, and the operating decisions made in every prior week. When a new question arrives — should we price this bundle at $79 or $99? should we list this lender as tier-1? — the Brain does not answer from scratch. It answers with the full context of what the unit has already decided, which keeps the unit consistent over time without a human memory in the loop.",
@@ -53,6 +59,8 @@ export const allInsights: Insight[] = [
     date: 'January 2026',
     category: 'Framework',
     readTime: '5 min read',
+    publishedISO: '2026-01-18',
+    updatedISO: '2026-01-18',
     body: [
       "Every prospective unit — a business we build from scratch, a domain we are considering acquiring, an idea that came in over the transom — has to pass three questions before it earns a slot. The questions are simple. They are also ruthless. The portfolio cap of ten means every slot is expensive, and the three questions are the filter that keeps the expensive slots from being wasted.",
       "Question one: does it solve a real, searchable problem? Not a problem we imagined. A problem people are typing into Google this week. BCPrivateLoans solves the question 'how do I get a private mortgage in BC.' BCMedicalAccess solves 'private MRI BC.' ZeroLawyer solves 'NDA template Ontario.' If the prospect cannot be anchored to a real search query with real volume, it does not pass. Real search volume is the market telling us the problem exists before we build anything.",
@@ -69,6 +77,8 @@ export const allInsights: Insight[] = [
     date: 'December 2025',
     category: 'Market',
     readTime: '8 min read',
+    publishedISO: '2025-12-12',
+    updatedISO: '2025-12-12',
     body: [
       "British Columbia has one of the most opaque private-lending markets in Canada. After operating BCPrivateLoans for most of a year and routing hundreds of borrower inquiries to private lenders across sixteen BC cities, the pattern is clear. The opacity is not accidental. It is the business model.",
       "Private lending in BC runs through a broker funnel. A borrower who cannot qualify for a traditional mortgage ends up in front of a mortgage broker. The broker has relationships with fifteen to thirty private lenders. The broker charges the borrower a fee — typically 1–2% of the loan — for the introduction. The lender also pays the broker a referral. The borrower signs paperwork without ever seeing the rate sheets of the lenders the broker did not choose.",

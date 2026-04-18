@@ -84,8 +84,43 @@ export default async function CompanyDetail({
 
   const others = companies.filter((c) => c.slug !== company.slug);
 
+  const orgLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: company.name,
+    url: company.url,
+    description: company.summary,
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'Boost Commerce Group',
+      url: 'https://www.boostcommerce.ca',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressRegion: 'BC',
+      addressCountry: 'CA',
+    },
+  };
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.boostcommerce.ca' },
+      { '@type': 'ListItem', position: 2, name: 'Portfolio', item: 'https://www.boostcommerce.ca/companies' },
+      { '@type': 'ListItem', position: 3, name: company.name, item: `https://www.boostcommerce.ca/companies/${company.slug}` },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       {/* Hero */}
       <section
         style={{

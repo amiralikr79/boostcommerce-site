@@ -17,7 +17,7 @@ export function Footer() {
             gridTemplateColumns: '1fr',
             gap: '2.5rem',
           }}
-          className="md:grid-cols-3"
+          className="md:grid-cols-4"
         >
           {/* Brand */}
           <div>
@@ -63,7 +63,9 @@ export function Footer() {
                 { href: '/', label: 'Home' },
                 { href: '/companies', label: 'Portfolio' },
                 { href: '/insights', label: 'Insights' },
+                { href: '/acquisitions', label: 'Acquisitions' },
                 { href: '/leadership', label: 'Leadership' },
+                { href: '/press', label: 'Press' },
                 { href: '/contact', label: 'Contact' },
               ].map((l) => (
                 <Link
@@ -117,6 +119,42 @@ export function Footer() {
                 >
                   {l.label}
                 </a>
+              ))}
+            </nav>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <p
+              style={{
+                fontSize: '0.75rem',
+                fontWeight: '500',
+                textTransform: 'uppercase',
+                letterSpacing: '0.08em',
+                color: 'var(--color-text-faint)',
+                marginBottom: '0.75rem',
+              }}
+            >
+              Legal
+            </p>
+            <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              {[
+                { href: '/privacy', label: 'Privacy' },
+                { href: '/terms', label: 'Terms' },
+                { href: '/disclaimers', label: 'Disclaimers' },
+              ].map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--color-text-muted)',
+                    textDecoration: 'none',
+                    transition: 'color 0.15s ease',
+                  }}
+                >
+                  {l.label}
+                </Link>
               ))}
             </nav>
           </div>
