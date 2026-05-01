@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Linkedin, Mail, ShieldCheck, Users, Brain, Scale, Search } from 'lucide-react';
+import { ShieldCheck, Users, Brain, Scale, Search } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Leadership',
@@ -91,13 +91,17 @@ const layers = [
   },
 ];
 
-const founderFacts = [
-  { label: 'Role', value: 'Founder, CEO & Chair' },
-  { label: 'Based', value: 'North Vancouver, BC' },
+const holdcoFacts = [
+  { label: 'Entity', value: 'British Columbia holding company' },
   { label: 'Founded', value: '2025' },
-  { label: 'Properties', value: '4 of 10 indexed' },
+  { label: 'Ownership', value: 'Founder-owned, privately held' },
   { label: 'External capital', value: 'None' },
-  { label: 'Operating model', value: 'AI-native, zero full-time employees' },
+  { label: 'Debt', value: 'None' },
+  { label: 'Hold period', value: 'Indefinite' },
+  { label: 'Portfolio cap', value: '10 properties' },
+  { label: 'Slots filled', value: '4 of 10' },
+  { label: 'Distribution', value: 'Organic search + answer-engine citation' },
+  { label: 'Acquisition channel', value: 'Direct, no brokers' },
 ];
 
 export default function LeadershipPage() {
@@ -200,100 +204,44 @@ export default function LeadershipPage() {
             >
               <div
                 style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
                   paddingBottom: '1rem',
                   borderBottom: '1px solid var(--color-divider)',
                 }}
               >
-                <div
-                  aria-hidden="true"
-                  style={{
-                    width: '52px',
-                    height: '52px',
-                    borderRadius: 'var(--radius-md)',
-                    background:
-                      'linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%)',
-                    color: 'var(--color-text-inverse)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontFamily: 'Boska, Georgia, serif',
-                    fontSize: '1.25rem',
-                    fontWeight: 500,
-                    letterSpacing: '0.02em',
-                  }}
-                >
-                  AK
-                </div>
-                <div>
-                  <p style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--color-text)' }}>
-                    Amirali Karimi
-                  </p>
-                  <p style={{ fontFamily: mono, fontSize: '0.72rem', color: 'var(--color-text-faint)', letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '0.2rem' }}>
-                    Profile
-                  </p>
-                </div>
+                <p style={{ fontFamily: mono, fontSize: '0.7rem', color: 'var(--color-text-faint)', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '0.4rem' }}>
+                  Holding company
+                </p>
+                <p style={{ fontFamily: 'Boska, Georgia, serif', fontSize: '1.125rem', fontWeight: 500, color: 'var(--color-text)', letterSpacing: '-0.01em' }}>
+                  Boost Commerce Group
+                </p>
               </div>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column' }}>
-                {founderFacts.map((f, i) => (
+                {holdcoFacts.map((f, i) => (
                   <li
                     key={f.label}
                     style={{
                       display: 'grid',
-                      gridTemplateColumns: '1fr 1.4fr',
+                      gridTemplateColumns: '1fr 1.5fr',
                       gap: '0.75rem',
-                      padding: '0.7rem 0',
-                      borderBottom: i < founderFacts.length - 1 ? '1px solid var(--color-divider)' : 'none',
+                      padding: '0.65rem 0',
+                      borderBottom: i < holdcoFacts.length - 1 ? '1px solid var(--color-divider)' : 'none',
                       alignItems: 'baseline',
                     }}
                   >
-                    <span style={{ fontFamily: mono, fontSize: '0.7rem', color: 'var(--color-text-faint)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+                    <span style={{ fontFamily: mono, fontSize: '0.68rem', color: 'var(--color-text-faint)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
                       {f.label}
                     </span>
-                    <span style={{ fontSize: '0.875rem', color: 'var(--color-text)', lineHeight: 1.5 }}>
+                    <span style={{ fontFamily: mono, fontSize: '0.82rem', color: 'var(--color-text)', lineHeight: 1.5 }}>
                       {f.value}
                     </span>
                   </li>
                 ))}
               </ul>
-              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                <a
-                  href="https://www.linkedin.com/in/amirali-karimi-405766199"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.35rem',
-                    padding: '0.5rem 0.85rem',
-                    border: '1px solid var(--color-border)',
-                    borderRadius: 'var(--radius-md)',
-                    fontSize: '0.825rem',
-                    color: 'var(--color-text)',
-                    textDecoration: 'none',
-                  }}
-                >
-                  <Linkedin size={14} /> LinkedIn
+              <p style={{ fontFamily: mono, fontSize: '0.72rem', color: 'var(--color-text-faint)', letterSpacing: '0.04em', paddingTop: '0.5rem', borderTop: '1px solid var(--color-divider)' }}>
+                <a href="mailto:hello@boostcommerce.ca" style={{ color: 'var(--color-text-faint)', textDecoration: 'none' }}>
+                  hello@boostcommerce.ca
                 </a>
-                <a
-                  href="mailto:hello@boostcommerce.ca"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.35rem',
-                    padding: '0.5rem 0.85rem',
-                    border: '1px solid var(--color-border)',
-                    borderRadius: 'var(--radius-md)',
-                    fontSize: '0.825rem',
-                    color: 'var(--color-text)',
-                    textDecoration: 'none',
-                  }}
-                >
-                  <Mail size={14} /> Email
-                </a>
-              </div>
+              </p>
             </aside>
             <div>
               <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Founder</p>
@@ -306,35 +254,26 @@ export default function LeadershipPage() {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
-                  Boost Commerce Group is a holding company for digital
-                  information businesses, directories, lead-gen sites, and
-                  media properties whose distribution is owned, not rented.
-                  Every property in the portfolio earns its traffic from
-                  search engines and answer engines, channels where the user
-                  has already declared intent.
+                  Amirali Karimi founded Boost Commerce Group in 2025 around
+                  a single conviction: the most valuable digital asset of the
+                  next decade is the property that search engines rank first
+                  and answer engines cite by name. Not the loudest brand. Not
+                  the largest team. The canonical source.
                 </p>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  BCG runs with zero full-time employees. The stack is three
-                  layers. ChatGPT Projects holds the context, Manus does the
-                  execution, Claude handles the review. A founder plus the
-                  stack is the entire operating company. The four properties
-                  in the portfolio today all run on that architecture, and
-                  the cap of ten exists because a founder plus the stack can
-                  supervise ten properties at the institutional standard we
-                  set, and not much more than ten.
+                  BCG was built to own a small collection of those
+                  properties, permanently. Every property in the portfolio
+                  earns its distribution from the channels where intent is
+                  highest, organic search and answer-engine citation, and is
+                  held without a horizon. The cap of ten is a ceiling, not a
+                  goal. Each slot is reserved for a property that earns it,
+                  and once a slot is filled, it stays.
                 </p>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  BCG is domiciled in British Columbia. The regulatory
-                  surface in BC is clean, the categories we work in are
-                  unambiguously local, and the properties are taxed and
-                  compliant in the province. BCG is not a mailbox firm.
-                </p>
-                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  Permanent capital is the discipline behind the strategy.
-                  Without a clock, pricing is fair, content is patient, and
-                  the problems chosen are the ones that will still be
-                  searched for in ten years and cited by models in twenty.
-                  Ten slots, held indefinitely.
+                  There is no fund. There is no clock. There is no plan to
+                  sell. The work is to own the right ten properties and to
+                  be the steward those properties deserve, for as long as
+                  the categories they cover continue to matter.
                 </p>
               </div>
             </div>
