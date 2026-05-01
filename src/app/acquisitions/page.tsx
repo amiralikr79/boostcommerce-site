@@ -5,7 +5,7 @@ import { Check, X, Mail, ArrowUpRight, Target, Clock, Scale } from 'lucide-react
 export const metadata: Metadata = {
   title: 'Acquisitions',
   description:
-    'What Boost Commerce Group acquires, what we do not, and how the process works. BC-focused digital businesses, $5k to $50k/mo revenue, permanent capital, no broker middlemen.',
+    'What Boost Commerce Group acquires: owned-traffic digital properties with documented search visibility and answer-engine citation. $5k to $50k/mo revenue, permanent capital, no broker middlemen.',
   alternates: { canonical: 'https://www.boostcommerce.ca/acquisitions' },
 };
 
@@ -35,12 +35,13 @@ const gridBg: React.CSSProperties = {
 };
 
 const fit = [
-  { label: 'Geography', value: 'British Columbia, Canada (remote OK if the revenue is BC)' },
+  { label: 'Asset class', value: 'Owned-traffic digital property: directory, information product, lead-gen, template library, or media site' },
+  { label: 'Distribution', value: 'Organic search and/or answer-engine citation. Documented index health, ranking history, and intent-led queries.' },
+  { label: 'Geography', value: 'British Columbia, Canada (remote OK if the revenue is BC, or the category is national and search-led)' },
   { label: 'Revenue', value: '$5,000 to $50,000 / month, trailing 6 months' },
-  { label: 'Model', value: 'Digital-only. Directory, marketplace, template, lead-gen, content-product' },
   { label: 'Team', value: 'Zero or one operator. We replace employees with the AI stack.' },
   { label: 'Tenure', value: 'Two or more years in market. We avoid pre-PMF bets.' },
-  { label: 'Growth', value: 'Flat-to-growing. We do not need a rocket ship.' },
+  { label: 'Growth', value: 'Flat-to-growing organic traffic. We do not need a rocket ship; we need a defensible index.' },
   { label: 'Margins', value: 'Gross margin 60%+ after AI-stack substitution' },
   { label: 'Compliance', value: 'Defensible is/is-not boundary in a regulated category' },
 ];
@@ -83,16 +84,18 @@ export default function AcquisitionsPage() {
               lineHeight: 1.03,
               letterSpacing: '-0.02em',
               marginBottom: '1.5rem',
-              maxWidth: '18ch',
+              maxWidth: '20ch',
             }}
           >
-            What we acquire, and what we do not.
+            We buy owned-traffic properties.
           </h1>
-          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '62ch', lineHeight: 1.65, marginBottom: '2rem' }}>
-            BCG operates a capped portfolio of ten focused digital businesses.
-            Four slots are filled. Six remain open. If your business fits the
-            criteria below, the route is direct, one email, no brokers,
-            no auctions, no IOI theatre.
+          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '64ch', lineHeight: 1.65, marginBottom: '2rem' }}>
+            BCG operates a capped portfolio of ten digital information
+            properties, sites whose distribution is owned through search and
+            answer-engine visibility, not rented from a platform. Four slots
+            are filled. Six remain open. If your property fits the criteria
+            below, the route is direct: one email, no brokers, no auctions,
+            no IOI theatre.
           </p>
           <a
             href="mailto:hello@boostcommerce.ca?subject=Acquisition%20intro"
@@ -120,7 +123,7 @@ export default function AcquisitionsPage() {
           <div style={{ marginBottom: '2rem' }}>
             <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Fit criteria</p>
             <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 500, letterSpacing: '-0.01em' }}>
-              Eight facts we check before we reply
+              Nine facts we check before we reply
             </h2>
           </div>
           <div style={panel}>
@@ -164,11 +167,11 @@ export default function AcquisitionsPage() {
               <p style={{ ...eyebrow, marginBottom: '1rem' }}>We acquire</p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {[
-                  'BC-focused directories, marketplaces, and lead-gen sites',
-                  'Legal / compliance / procurement templates and tools',
-                  'Information products with proprietary structured data',
-                  'Businesses with a regulatory moat and clear compliance lines',
-                  'Content sites that already monetise without an audience play',
+                  'BC-focused directories, marketplaces, and lead-gen properties',
+                  'Information products with proprietary structured data, indexed and citable',
+                  'Legal, compliance, or procurement template libraries with provincial coverage',
+                  'Content sites that already monetise from search demand, no audience play required',
+                  'Properties with a regulatory moat and a clear compliance line',
                 ].map((s) => (
                   <li key={s} style={{ display: 'flex', gap: '0.65rem', alignItems: 'flex-start' }}>
                     <Check size={18} style={{ color: 'var(--color-primary)', flexShrink: 0, marginTop: '0.15rem' }} />
@@ -182,7 +185,8 @@ export default function AcquisitionsPage() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 {[
                   'Physical inventory, stores, or logistics businesses',
-                  'Pre-revenue or audience-first plays',
+                  'Audience-first or social-platform-dependent properties',
+                  'Properties whose traffic comes from paid acquisition, not organic search',
                   'Agencies or services with human delivery as the product',
                   'Crypto, adult, firearms, or other restricted categories',
                   'Businesses that require a full-time operator to survive',
@@ -229,10 +233,10 @@ export default function AcquisitionsPage() {
           </div>
           <ol style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             {[
-              { n: '01', Icon: Mail, title: 'Intro email', body: 'One paragraph: what the business is, last-12-months revenue, why you are open to sale. No NDA required for this step.' },
-              { n: '02', Icon: Target, title: 'Fit review, 48 hours', body: 'We confirm fit or pass. If we pass we tell you why. If we fit we send a short data-room request.' },
-              { n: '03', Icon: Clock, title: 'Diligence, 21 days', body: 'Books, analytics, platform risk, compliance, content review. Under mutual NDA. Direct line to the founder throughout.' },
-              { n: '04', Icon: Scale, title: 'Close, 7 days', body: 'Purchase agreement, asset transfer, domain + accounts handover. Payment at close, wire same day.' },
+              { n: '01', Icon: Mail, title: 'Intro email', body: 'One paragraph: what the property is, last-12-months revenue, top organic queries, and why you are open to sale. No NDA required for this step.' },
+              { n: '02', Icon: Target, title: 'Fit review, 48 hours', body: 'We confirm fit or pass. If we pass we tell you why. If we fit we send a short data-room request, including search-console exports and citation samples.' },
+              { n: '03', Icon: Clock, title: 'Diligence, 21 days', body: 'Books, analytics, index health, platform risk, compliance, and content review. Under mutual NDA. Direct line to the founder throughout.' },
+              { n: '04', Icon: Scale, title: 'Close, 7 days', body: 'Purchase agreement, asset transfer, domain and account handover. Payment at close, wire same day.' },
             ].map((s) => (
               <li key={s.n} style={{ ...panel, display: 'grid', gap: '1.25rem', gridTemplateColumns: 'auto auto 1fr', alignItems: 'center' }}>
                 <span style={{ fontFamily: mono, fontSize: '1.25rem', color: 'var(--color-text-faint)' }}>{s.n}</span>
@@ -274,7 +278,7 @@ export default function AcquisitionsPage() {
           >
             <p style={{ ...eyebrow, marginBottom: '0.75rem' }}>Direct route</p>
             <h2 style={{ fontSize: 'clamp(1.875rem, 4vw, 3rem)', fontWeight: 500, marginBottom: '1rem', letterSpacing: '-0.01em' }}>
-              Think your business fits? Send one email.
+              Think your property fits? Send one email.
             </h2>
             <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.65, marginBottom: '2rem', maxWidth: '62ch' }}>
               If you are a broker representing a fit business, we still take

@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { Linkedin, Mail, ShieldCheck, Users, Brain, Scale } from 'lucide-react';
+import { Linkedin, Mail, ShieldCheck, Users, Brain, Scale, Search } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Leadership',
   description:
-    'Boost Commerce Group is operator-led and founder-owned. Meet Amirali Karimi and the four-layer governance model behind the portfolio.',
+    'Boost Commerce Group is operator-led and founder-owned. Amirali Karimi and the four-layer governance model behind a portfolio of owned-traffic digital properties.',
   alternates: { canonical: 'https://www.boostcommerce.ca/leadership' },
 };
 
@@ -38,29 +38,29 @@ const layers = [
     n: 'LAYER 01',
     title: 'Board',
     Icon: ShieldCheck,
-    body: 'The governing body of Boost Commerce Group. Independent oversight for material capital decisions.',
+    body: 'The governing body of Boost Commerce Group. Founder-led, with capacity for an independent observer when scale requires it.',
     bullets: [
       'Amirali Karimi (Founder, CEO, Chair)',
-      'Independent observer seat (reserved)',
+      'Independent observer seat, available',
       'Quarterly governance review',
     ],
   },
   {
     n: 'LAYER 02',
-    title: 'Operating principals',
+    title: 'Property principals',
     Icon: Users,
-    body: 'Each unit has an operating principal with P&L ownership. Principals run the day-to-day.',
+    body: 'Each property has a principal with P&L ownership. Principals run day-to-day operations and own search and answer-engine performance for their unit.',
     bullets: [
-      'Unit-level P&L accountability',
+      'Property-level P&L accountability',
       'Aligned through long-term economics',
-      'Supported by shared BCG services',
+      'Owns ranking, citation, and conversion metrics',
     ],
   },
   {
     n: 'LAYER 03',
     title: 'AI operating stack',
     Icon: Brain,
-    body: 'The three-role stack, brain, hands, eyes, that lets a ten-unit portfolio run without full-time employees.',
+    body: 'The three-role stack, brain, hands, eyes, that lets a ten-property portfolio run without full-time employees.',
     bullets: [
       'ChatGPT Projects, strategy and memory',
       'Manus, multi-hour execution',
@@ -69,15 +69,35 @@ const layers = [
   },
   {
     n: 'LAYER 04',
+    title: 'Distribution & data',
+    Icon: Search,
+    body: 'The owned-traffic discipline. Schema, sitemaps, citations, and structured data are managed centrally so every property is built to be both indexed and quotable.',
+    bullets: [
+      'Schema and structured-data standards',
+      'Index health and crawl monitoring',
+      'Answer-engine citation tracking',
+    ],
+  },
+  {
+    n: 'LAYER 05',
     title: 'Advisors & counsel',
     Icon: Scale,
     body: 'Legal, accounting, and compliance partners. Boundaries enforced before scale.',
     bullets: [
-      'ZeroLawyer + external Canadian counsel',
-      'Accounting & tax, BC-licensed firm',
-      'Privacy & compliance review quarterly',
+      'External Canadian counsel, per-property',
+      'Accounting and tax, BC-licensed firm',
+      'Privacy and compliance review quarterly',
     ],
   },
+];
+
+const founderFacts = [
+  { label: 'Role', value: 'Founder, CEO & Chair' },
+  { label: 'Based', value: 'North Vancouver, BC' },
+  { label: 'Founded', value: '2025' },
+  { label: 'Properties', value: '4 of 10 indexed' },
+  { label: 'External capital', value: 'None' },
+  { label: 'Operating model', value: 'AI-native, zero full-time employees' },
 ];
 
 export default function LeadershipPage() {
@@ -137,7 +157,7 @@ export default function LeadershipPage() {
           className="container"
           style={{ position: 'relative', paddingTop: 'clamp(4rem, 8vw, 7rem)', paddingBottom: 'clamp(3rem, 6vw, 5rem)' }}
         >
-          <p style={{ ...eyebrow, marginBottom: '1.25rem' }}>Leadership</p>
+          <p style={{ ...eyebrow, marginBottom: '1.25rem' }}>Leadership &amp; governance</p>
           <h1
             style={{
               fontFamily: 'Boska, Georgia, serif',
@@ -151,11 +171,11 @@ export default function LeadershipPage() {
           >
             Operator-led. Founder-owned.
           </h1>
-          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '60ch', lineHeight: 1.65 }}>
+          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '62ch', lineHeight: 1.65 }}>
             Boost Commerce Group is private, founder-owned, and governed by a
-            four-layer model designed to support a ten-unit portfolio at the
-            standard we set, without full-time headcount at the holdco
-            level.
+            five-layer model designed to operate ten owned-traffic properties
+            at institutional standard, without full-time headcount at the
+            holdco level.
           </p>
         </div>
       </section>
@@ -165,96 +185,80 @@ export default function LeadershipPage() {
         <div className="container">
           <div
             style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2.5rem', alignItems: 'start' }}
-            className="md:grid-cols-[300px_1fr]"
+            className="md:grid-cols-[320px_1fr]"
           >
-            <div
+            <aside
               style={{
-                aspectRatio: '4 / 5',
-                borderRadius: 'var(--radius-lg)',
-                overflow: 'hidden',
-                position: 'relative',
-                background:
-                  'linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%)',
-                boxShadow: 'var(--shadow-md)',
+                ...panel,
+                padding: '1.5rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1.25rem',
+                position: 'sticky',
+                top: '88px',
               }}
             >
-              <span
-                aria-hidden="true"
+              <div
                 style={{
-                  position: 'absolute',
-                  inset: 0,
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'var(--color-text-inverse)',
-                  fontFamily: 'Boska, Georgia, serif',
-                  fontSize: 'clamp(4rem, 10vw, 7rem)',
-                  fontWeight: 500,
-                  letterSpacing: '-0.02em',
+                  gap: '0.75rem',
+                  paddingBottom: '1rem',
+                  borderBottom: '1px solid var(--color-divider)',
                 }}
               >
-                AK
-              </span>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/founder.jpg"
-                alt="Amirali Karimi, founder of Boost Commerce Group"
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  objectPosition: 'center 25%',
-                }}
-              />
-            </div>
-            <div>
-              <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Founder</p>
-              <h2 style={{ fontSize: 'clamp(1.875rem, 4vw, 2.75rem)', fontWeight: 500, marginBottom: '0.5rem', letterSpacing: '-0.01em' }}>
-                Amirali Karimi
-              </h2>
-              <p style={{ fontSize: '1rem', color: 'var(--color-text-muted)', marginBottom: '1.75rem' }}>
-                Founder, CEO & Chair &middot; North Vancouver, BC
-              </p>
-
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem', marginBottom: '2rem' }}>
-                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
-                  I am a British Columbia founder who did not want to work at
-                  a fund, did not want to sprint to an exit, and did not want
-                  to run a rollup of a hundred companies. Boost Commerce
-                  Group is the holding company I built instead of any of those.
-                </p>
-                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  I run BCG with zero full time employees. The stack is three
-                  layers. ChatGPT Projects holds the context. Manus does the
-                  execution. Claude handles the review. A founder plus the
-                  stack is the entire operating company, and the four units
-                  in the portfolio all run on that same architecture. The
-                  portfolio cap is ten because a founder plus the stack can
-                  supervise ten units at the standard we set, and not much
-                  more than ten.
-                </p>
-                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  I built BCG in North Vancouver because I live here. The
-                  regulatory surface in BC is clean, the problems are
-                  unambiguously local, and the operators I respect live
-                  within a two hour drive. The unit sites are domiciled,
-                  compliant, and taxed in the province. BCG is not
-                  pretending to be a global firm from a mailbox.
-                </p>
-                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  I chose permanent capital because every clock I have seen
-                  other holding companies run on eventually distorted the
-                  decisions those companies made. Without a clock, pricing
-                  is fair, hiring is patient, and the problems we pick are
-                  the ones that will still be problems in twenty years. I
-                  would rather own four good units for decades than forty
-                  average units for seven years. Ten slots, held indefinitely.
-                </p>
+                <div
+                  aria-hidden="true"
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    borderRadius: 'var(--radius-md)',
+                    background:
+                      'linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%)',
+                    color: 'var(--color-text-inverse)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontFamily: 'Boska, Georgia, serif',
+                    fontSize: '1.25rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.02em',
+                  }}
+                >
+                  AK
+                </div>
+                <div>
+                  <p style={{ fontSize: '1rem', fontWeight: 500, color: 'var(--color-text)' }}>
+                    Amirali Karimi
+                  </p>
+                  <p style={{ fontFamily: mono, fontSize: '0.72rem', color: 'var(--color-text-faint)', letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '0.2rem' }}>
+                    Profile
+                  </p>
+                </div>
               </div>
-
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column' }}>
+                {founderFacts.map((f, i) => (
+                  <li
+                    key={f.label}
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: '1fr 1.4fr',
+                      gap: '0.75rem',
+                      padding: '0.7rem 0',
+                      borderBottom: i < founderFacts.length - 1 ? '1px solid var(--color-divider)' : 'none',
+                      alignItems: 'baseline',
+                    }}
+                  >
+                    <span style={{ fontFamily: mono, fontSize: '0.7rem', color: 'var(--color-text-faint)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+                      {f.label}
+                    </span>
+                    <span style={{ fontSize: '0.875rem', color: 'var(--color-text)', lineHeight: 1.5 }}>
+                      {f.value}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                 <a
                   href="https://www.linkedin.com/in/amirali-karimi-405766199"
                   target="_blank"
@@ -262,33 +266,76 @@ export default function LeadershipPage() {
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '0.4rem',
-                    padding: '0.625rem 1rem',
+                    gap: '0.35rem',
+                    padding: '0.5rem 0.85rem',
                     border: '1px solid var(--color-border)',
                     borderRadius: 'var(--radius-md)',
-                    fontSize: '0.9rem',
+                    fontSize: '0.825rem',
                     color: 'var(--color-text)',
                     textDecoration: 'none',
                   }}
                 >
-                  <Linkedin size={15} /> LinkedIn
+                  <Linkedin size={14} /> LinkedIn
                 </a>
                 <a
                   href="mailto:hello@boostcommerce.ca"
                   style={{
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '0.4rem',
-                    padding: '0.625rem 1rem',
+                    gap: '0.35rem',
+                    padding: '0.5rem 0.85rem',
                     border: '1px solid var(--color-border)',
                     borderRadius: 'var(--radius-md)',
-                    fontSize: '0.9rem',
+                    fontSize: '0.825rem',
                     color: 'var(--color-text)',
                     textDecoration: 'none',
                   }}
                 >
-                  <Mail size={15} /> hello@boostcommerce.ca
+                  <Mail size={14} /> Email
                 </a>
+              </div>
+            </aside>
+            <div>
+              <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Founder</p>
+              <h2 style={{ fontSize: 'clamp(1.875rem, 4vw, 2.75rem)', fontWeight: 500, marginBottom: '0.5rem', letterSpacing: '-0.01em' }}>
+                Amirali Karimi
+              </h2>
+              <p style={{ fontSize: '1rem', color: 'var(--color-text-muted)', marginBottom: '1.75rem' }}>
+                Founder, CEO &amp; Chair &middot; North Vancouver, BC
+              </p>
+
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
+                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
+                  Boost Commerce Group is a holding company for digital
+                  information businesses, directories, lead-gen sites, and
+                  media properties whose distribution is owned, not rented.
+                  Every property in the portfolio earns its traffic from
+                  search engines and answer engines, channels where the user
+                  has already declared intent.
+                </p>
+                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
+                  BCG runs with zero full-time employees. The stack is three
+                  layers. ChatGPT Projects holds the context, Manus does the
+                  execution, Claude handles the review. A founder plus the
+                  stack is the entire operating company. The four properties
+                  in the portfolio today all run on that architecture, and
+                  the cap of ten exists because a founder plus the stack can
+                  supervise ten properties at the institutional standard we
+                  set, and not much more than ten.
+                </p>
+                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
+                  BCG is domiciled in British Columbia. The regulatory
+                  surface in BC is clean, the categories we work in are
+                  unambiguously local, and the properties are taxed and
+                  compliant in the province. BCG is not a mailbox firm.
+                </p>
+                <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
+                  Permanent capital is the discipline behind the strategy.
+                  Without a clock, pricing is fair, content is patient, and
+                  the problems chosen are the ones that will still be
+                  searched for in ten years and cited by models in twenty.
+                  Ten slots, held indefinitely.
+                </p>
               </div>
             </div>
           </div>
@@ -301,7 +348,7 @@ export default function LeadershipPage() {
           <div style={{ marginBottom: '2.5rem' }}>
             <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Governance</p>
             <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 500, letterSpacing: '-0.01em' }}>
-              Four layers, one operating model
+              Five layers, one operating model
             </h2>
           </div>
           <div style={{ display: 'grid', gap: '1rem' }} className="md:grid-cols-2">

@@ -11,20 +11,12 @@ export const metadata: Metadata = {
     template: '%s | Boost Commerce Group',
   },
   description:
-    'A British Columbia holding company that acquires, builds, and operates focused digital businesses serving real local needs.',
+    'A British Columbia holding company for owned-traffic digital businesses. We acquire, build, and operate directories, information products, and media properties engineered for search and answer-engine visibility. Permanent capital. AI-native operations. Portfolio capped at ten.',
   openGraph: {
     type: 'website',
     locale: 'en_CA',
     url: 'https://www.boostcommerce.ca',
     siteName: 'Boost Commerce Group',
-    images: [
-      {
-        url: '/og-default.png',
-        width: 1200,
-        height: 630,
-        alt: 'Boost Commerce Group',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -57,7 +49,7 @@ export default function RootLayout({
               url: 'https://www.boostcommerce.ca',
               logo: 'https://www.boostcommerce.ca/favicon.svg',
               description:
-                'A British Columbia holding company that acquires, builds, and operates focused digital businesses.',
+                'A British Columbia holding company for owned-traffic digital businesses. Directories, information products, and media properties engineered for search and answer-engine visibility.',
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'North Vancouver',

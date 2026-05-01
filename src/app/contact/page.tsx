@@ -4,7 +4,7 @@ import { Mail, Linkedin, Rocket, Users, Newspaper, Sparkles, ArrowUpRight } from
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Contact Boost Commerce Group. Acquisition intros, operator inquiries, press, and general. hello@boostcommerce.ca.',
+    'Contact Boost Commerce Group. Acquisition intros for owned-traffic digital properties, operator inquiries, press, and general. hello@boostcommerce.ca.',
   alternates: { canonical: 'https://www.boostcommerce.ca/contact' },
 };
 
@@ -36,14 +36,14 @@ const gridBg: React.CSSProperties = {
 const intents = [
   {
     Icon: Rocket,
-    title: "I'm building something BCG should acquire",
-    body: 'If your business fits the three-question filter and you are open to permanent ownership, let us see it.',
+    title: "I'm building owned-traffic BCG should acquire",
+    body: 'If your property fits the three-question filter, earns durable organic search or answer-engine traffic, and you are open to permanent ownership, let us see it.',
     subject: 'Acquisition intro',
   },
   {
     Icon: Users,
-    title: 'I want to operate a future unit',
-    body: 'BCG principals have P&L ownership and long-term economics. Tell us what you would operate and why.',
+    title: 'I want to operate a future property',
+    body: 'BCG principals have P&L ownership, long-term economics, and own ranking and citation metrics for their property.',
     subject: 'Operator inquiry',
   },
   {

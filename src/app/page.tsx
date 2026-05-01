@@ -12,9 +12,9 @@ import { companies, accentHex } from '@/lib/companies';
 import { allInsights } from '@/lib/insights';
 
 export const metadata: Metadata = {
-  title: 'Boost Commerce Group | Permanent capital. Focused businesses.',
+  title: 'Boost Commerce Group | Owned traffic. Permanent capital.',
   description:
-    'A British Columbia holding company acquiring, building, and operating focused digital businesses. Portfolio capped at 10. Permanent capital. No external investors.',
+    'A British Columbia holding company for owned-traffic digital businesses. Directories, information products, and media properties engineered for search and answer-engine visibility. Portfolio capped at ten. No external capital.',
   alternates: { canonical: 'https://www.boostcommerce.ca' },
 };
 
@@ -22,12 +22,12 @@ const mono =
   'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
 
 const principles = [
-  { n: '01', title: 'Solve real, searchable problems', body: 'If nobody is typing the question into a search bar this week, we are not building the answer.' },
-  { n: '02', title: 'Revenue before audience', body: 'We measure units by cash collected, not followers accumulated. Every unit is expected to pay for itself.' },
-  { n: '03', title: 'AI-native by default', body: 'Brain, hands, and eyes are roles, not hires. Every workflow decomposes onto the three-layer stack.' },
-  { n: '04', title: 'Portfolio capped at 10', body: 'Ten slots is the forcing function. Anything beyond ten cannot be operated at the standard we set.' },
-  { n: '05', title: 'Compliance before scale', body: 'Every unit publishes its is-and-is-not boundaries. Scale only comes after the boundary is defensible.' },
-  { n: '06', title: 'Exit-ready, hold forever', body: 'We keep the books clean enough to sell tomorrow and the conviction strong enough to never sell at all.' },
+  { n: '01', title: 'Solve real, searchable problems', body: 'If nobody is typing the question into a search bar or asking a model this week, we are not building the answer. Demand is the prerequisite, not the bet.' },
+  { n: '02', title: 'Owned distribution, not rented', body: 'Every unit owns its domain, its index position, and its data. We do not depend on a feed, a marketplace, or a paid channel that can disappear with a policy change.' },
+  { n: '03', title: 'Indexed in search. Cited by models.', body: 'SEO and AEO are the same job: be the source the algorithm picks. Every unit is structured for both blue-link search and answer-engine citation.' },
+  { n: '04', title: 'AI-native by default', body: 'Brain, hands, and eyes are roles, not hires. Every workflow, including ranking, structuring, and citation, decomposes onto the three-layer stack.' },
+  { n: '05', title: 'Portfolio capped at 10', body: 'Ten slots is the forcing function. Anything beyond ten cannot be operated at the standard we set.' },
+  { n: '06', title: 'Compliance before scale', body: 'Every unit publishes its is-and-is-not boundaries. Scale only comes after the boundary is defensible to a regulator and to a model.' },
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -145,7 +145,7 @@ export default function Home() {
           }}
         >
           <p style={{ ...eyebrow, marginBottom: '1.5rem' }}>
-            British Columbia &middot; Est 2025
+            British Columbia &middot; Est 2025 &middot; Privately held
           </p>
           <h1
             style={{
@@ -166,24 +166,25 @@ export default function Home() {
                 backgroundClip: 'text',
               }}
             >
-              Permanent capital.
+              Owned traffic.
             </span>
             <br />
-            Focused businesses.
+            Permanent capital.
           </h1>
           <p
             style={{
               fontSize: 'clamp(1.0625rem, 1.5vw, 1.25rem)',
               color: 'var(--color-text-muted)',
-              maxWidth: '58ch',
+              maxWidth: '60ch',
               lineHeight: 1.65,
               marginBottom: '2.5rem',
             }}
           >
-            Boost Commerce Group acquires, builds, and operates focused digital
-            businesses from North Vancouver, British Columbia. Ten slots, no
-            external capital, no clock. Every unit solves a real problem,
-            operates without employees, and is built to hold indefinitely.
+            Boost Commerce Group is a British Columbia holding company that
+            owns and operates a capped portfolio of digital information
+            businesses, directories, lead-gen sites, and media properties
+            engineered to compound through search and answer-engine traffic.
+            Ten slots. No external capital. No clock.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
             <Link href="/companies" style={btnPrimary}>
@@ -194,7 +195,7 @@ export default function Home() {
             </Link>
           </div>
           <p style={{ fontFamily: mono, fontSize: '0.8rem', color: 'var(--color-text-faint)' }}>
-            bcg@north-vancouver:~$ ls ./units &nbsp;&rarr;&nbsp; 4 active / 10 slots
+            bcg@north-vancouver:~$ ls ./properties &nbsp;&rarr;&nbsp; 4 indexed / 10 slots
           </p>
         </div>
       </section>
@@ -246,9 +247,9 @@ export default function Home() {
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '2.5rem' }}>
             <div>
-              <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Portfolio &middot; 4 of 10</p>
+              <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Properties &middot; 4 of 10</p>
               <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)', fontWeight: 500, letterSpacing: '-0.01em' }}>
-                The units
+                The properties
               </h2>
             </div>
             <Link
@@ -366,7 +367,7 @@ export default function Home() {
               textAlign: 'right',
             }}
           >
-            4 of 10 portfolio slots filled
+            4 of 10 properties indexed &middot; 6 slots open
           </p>
         </div>
       </section>
@@ -377,7 +378,7 @@ export default function Home() {
           <div style={{ marginBottom: '2.5rem' }}>
             <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Operating principles</p>
             <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)', fontWeight: 500 }}>
-              Six rules every unit lives by
+              Six rules every property lives by
             </h2>
           </div>
           <div
@@ -408,10 +409,11 @@ export default function Home() {
             <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)', fontWeight: 500 }}>
               How BCG actually operates
             </h2>
-            <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', maxWidth: '56ch', marginTop: '1rem', lineHeight: 1.65 }}>
-              Every unit runs on the same three-layer stack. No full-time
-              employees. Each role is owned by the system that is disproportionately
-              good at that part of the job.
+            <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', maxWidth: '60ch', marginTop: '1rem', lineHeight: 1.65 }}>
+              Every property runs on the same three-layer stack. No full-time
+              employees. The same stack writes the content, structures the
+              data, audits every claim, and ships the page that search engines
+              rank and answer engines cite.
             </p>
           </div>
 
@@ -512,7 +514,7 @@ export default function Home() {
             <div>
               <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Thesis &middot; About BCG</p>
               <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 500, marginBottom: '1rem' }}>
-                Permanent capital, operator-led.
+                A holding company for owned traffic.
               </h2>
               <Link
                 href="/leadership"
@@ -524,26 +526,30 @@ export default function Home() {
                   gap: '0.35rem',
                 }}
               >
-                Meet the founder <ArrowUpRight size={14} />
+                Leadership &amp; governance <ArrowUpRight size={14} />
               </Link>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
                 Boost Commerce Group is a British Columbia holding company
-                founded in 2025 by Amirali Karimi in North Vancouver. We acquire
-                and build focused digital businesses and hold them indefinitely.
-                No external capital. No investors. No clock.
+                founded in 2025 by Amirali Karimi in North Vancouver. We
+                acquire, build, and operate digital information businesses
+                with one common trait: durable owned traffic. Each property
+                is engineered to rank in search engines and to be cited by
+                answer engines on queries with real commercial intent.
               </p>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                The portfolio is capped at ten. The cap is the forcing function
-                that keeps the bar high: each slot is an expensive decision, so
-                each unit must clear three questions before it earns one.
+                The portfolio is capped at ten and held indefinitely. No
+                external capital. No investors. No clock. The cap is the
+                forcing function that keeps the bar high: each slot is an
+                expensive decision, so each property must clear three
+                questions before it earns one.
               </p>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                Does it solve a real, searchable problem? Can it reach
-                $1,000 per month within twelve months? Can it operate without
-                full-time employees? Three yes answers, or the prospect does
-                not pass.
+                Does it solve a real, searchable problem with documented
+                intent? Can it reach $1,000 per month within twelve months on
+                owned traffic alone? Can it operate without full-time
+                employees? Three yes answers, or the prospect does not pass.
               </p>
             </div>
           </div>
@@ -638,9 +644,10 @@ export default function Home() {
                 Building something BCG should know about?
               </h2>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.65, marginBottom: '2rem' }}>
-                We read everything. Operators, founders of candidate units, and
-                legal/accounting counsel, if you fit one of the ten slots or
-                want to run one, send a note.
+                We read everything. Operators, founders of acquisition
+                candidates, and counsel, if you fit one of the ten slots, want
+                to run one, or are building owned traffic in a category we
+                cover, send a note.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <a href="mailto:hello@boostcommerce.ca" style={btnPrimary}>

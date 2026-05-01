@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Boost Commerce Group, Permanent capital. Focused businesses.';
+export const alt = 'Boost Commerce Group, Owned traffic. Permanent capital.';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -59,6 +59,18 @@ export default function Image() {
               lineHeight: 1.02,
               letterSpacing: '-0.02em',
               fontWeight: 500,
+              color: '#5a9e88',
+              maxWidth: '980px',
+            }}
+          >
+            Owned traffic.
+          </div>
+          <div
+            style={{
+              fontSize: '88px',
+              lineHeight: 1.02,
+              letterSpacing: '-0.02em',
+              fontWeight: 500,
               color: '#f7f6f2',
               maxWidth: '980px',
             }}
@@ -67,15 +79,15 @@ export default function Image() {
           </div>
           <div
             style={{
-              fontSize: '88px',
-              lineHeight: 1.02,
-              letterSpacing: '-0.02em',
-              fontWeight: 500,
-              color: '#5a9e88',
-              maxWidth: '980px',
+              fontSize: '26px',
+              lineHeight: 1.4,
+              color: '#bcb9b3',
+              fontFamily: 'monospace',
+              maxWidth: '880px',
+              marginTop: '8px',
             }}
           >
-            Focused businesses.
+            Holding company for digital information businesses. Indexed in search. Cited by answer engines.
           </div>
         </div>
 
