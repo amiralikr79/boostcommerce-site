@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { ArrowUpRight, Linkedin } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { allInsights, getInsight } from '@/lib/insights';
 
 const mono =
@@ -73,10 +73,9 @@ export default async function InsightDetail({
     datePublished: essay.publishedISO,
     dateModified: essay.updatedISO,
     author: {
-      '@type': 'Person',
-      name: 'Amirali Karimi',
-      url: 'https://www.boostcommerce.ca/leadership',
-      sameAs: ['https://www.linkedin.com/in/amirali-karimi-405766199'],
+      '@type': 'Organization',
+      name: 'Boost Commerce Group',
+      url: 'https://www.boostcommerce.ca',
     },
     publisher: {
       '@type': 'Organization',
@@ -178,32 +177,18 @@ export default async function InsightDetail({
                 paddingTop: '1.5rem',
                 borderTop: '1px solid var(--color-divider)',
                 display: 'flex',
-                flexDirection: 'column',
+                justifyContent: 'space-between',
+                alignItems: 'baseline',
+                flexWrap: 'wrap',
                 gap: '0.75rem',
               }}
             >
-              <p style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-                Written by
+              <p style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>
+                Boost Commerce Group
               </p>
-              <p style={{ fontSize: '1rem', color: 'var(--color-text)' }}>
-                Amirali Karimi &middot; Founder, Boost Commerce Group
+              <p style={{ fontFamily: mono, fontSize: '0.78rem', color: 'var(--color-text-faint)' }}>
+                Updated {essay.updatedISO}
               </p>
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a
-                  href="https://www.linkedin.com/in/amirali-karimi-405766199"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: '0.9rem', color: 'var(--color-primary)', display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
-                >
-                  <Linkedin size={14} /> LinkedIn
-                </a>
-                <a
-                  href="mailto:hello@boostcommerce.ca"
-                  style={{ fontSize: '0.9rem', color: 'var(--color-primary)' }}
-                >
-                  hello@boostcommerce.ca
-                </a>
-              </div>
             </div>
           </div>
         </section>
