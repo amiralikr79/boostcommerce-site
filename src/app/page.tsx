@@ -175,7 +175,7 @@ export default function Home() {
           }}
         >
           <p style={{ ...eyebrow, marginBottom: '1.5rem' }}>
-            British Columbia &middot; Est 2025 &middot; Privately held
+            British Columbia &middot; Est 2021 &middot; Privately held
           </p>
           <h1
             style={{
@@ -564,7 +564,7 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
-                Boost Commerce Group was founded in 2025 to operate a small,
+                Boost Commerce Group was founded in 2021 to operate a small,
                 permanent portfolio of high-authority information assets in
                 regulated Canadian categories. Each property is engineered to
                 rank in search engines and to be cited by answer engines on

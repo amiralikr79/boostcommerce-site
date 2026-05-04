@@ -101,7 +101,7 @@ export default function Image() {
             fontFamily: 'monospace',
           }}
         >
-          <div>British Columbia &middot; Est 2025</div>
+          <div>British Columbia &middot; Est 2021</div>
           <div>boostcommerce.ca</div>
         </div>
       </div>

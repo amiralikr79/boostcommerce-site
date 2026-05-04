@@ -93,7 +93,7 @@ const layers = [
 
 const holdcoFacts = [
   { label: 'Entity', value: 'British Columbia holding company' },
-  { label: 'Founded', value: '2025' },
+  { label: 'Founded', value: '2021' },
   { label: 'Ownership', value: 'Founder-owned, privately held' },
   { label: 'External capital', value: 'None' },
   { label: 'Debt', value: 'None' },
@@ -254,7 +254,7 @@ export default function LeadershipPage() {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
-                  Amirali Karimi founded Boost Commerce Group in 2025 around
+                  Amirali Karimi founded Boost Commerce Group in 2021 around
                   a single conviction: the most valuable digital asset of
                   the next decade is the property that search engines rank
                   first and answer engines cite by name. Not the loudest

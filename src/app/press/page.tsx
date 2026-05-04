@@ -35,7 +35,7 @@ const gridBg: React.CSSProperties = {
 
 const facts = [
   { label: 'Entity', value: 'Boost Commerce Group, British Columbia holding company' },
-  { label: 'Founded', value: '2025' },
+  { label: 'Founded', value: '2021' },
   { label: 'Headquarters', value: 'North Vancouver, British Columbia, Canada' },
   { label: 'Founder & CEO', value: 'Amirali Karimi' },
   { label: 'Mandate', value: 'Operate a portfolio of high-authority information assets in regulated Canadian categories' },
@@ -49,7 +49,7 @@ const facts = [
 ];
 
 const boilerplate =
-  'Boost Commerce Group is a British Columbia holding company that operates a portfolio of high-authority information assets in regulated Canadian categories. Founded in 2025 by Amirali Karimi in North Vancouver, BCG is privately held, takes no external capital, and caps its portfolio at ten properties. Each property is engineered to rank in search engines and to be cited by answer engines on queries with real commercial intent, and is monetized through organic traffic and targeted advertising. The portfolio is held indefinitely.';
+  'Boost Commerce Group is a British Columbia holding company that operates a portfolio of high-authority information assets in regulated Canadian categories. Founded in 2021 by Amirali Karimi in North Vancouver, BCG is privately held, takes no external capital, and caps its portfolio at ten properties. Each property is engineered to rank in search engines and to be cited by answer engines on queries with real commercial intent, and is monetized through organic traffic and targeted advertising. The portfolio is held indefinitely.';
 
 export default function PressPage() {
   return (
