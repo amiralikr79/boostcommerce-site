@@ -6,7 +6,7 @@ import { companies, accentHex } from '@/lib/companies';
 export const metadata: Metadata = {
   title: 'Portfolio',
   description:
-    'The Boost Commerce Group portfolio: four owned-traffic digital properties, a cap of ten slots, and no external capital. Directories, information products, and media properties built for search and answer-engine visibility.',
+    'The Boost Commerce Group portfolio: four high-authority information assets in regulated Canadian categories. A cap of ten properties. No external capital. Held indefinitely.',
   alternates: { canonical: 'https://www.boostcommerce.ca/companies' },
 };
 
@@ -90,12 +90,12 @@ export default function CompaniesPage() {
           >
             The properties
           </h1>
-          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '62ch', lineHeight: 1.65 }}>
-            BCG operates a capped portfolio of ten owned-traffic digital
-            properties. Four slots are filled today. Six remain open. Every
-            property must solve a real searchable problem, earn its
-            distribution from search and answer engines, reach $1k per month
-            within twelve months, and operate without full-time employees.
+          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '64ch', lineHeight: 1.65 }}>
+            BCG operates a capped portfolio of ten high-authority
+            information assets in regulated Canadian categories. Four slots
+            are filled. Six remain open. Each property earns its audience
+            in search and answer engines, and is monetized through organic
+            traffic and targeted advertising.
           </p>
         </div>
       </section>
@@ -229,7 +229,7 @@ export default function CompaniesPage() {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '1rem' }}>
               <p style={eyebrow}>Slot availability</p>
               <p style={{ fontFamily: mono, fontSize: '0.8rem', color: 'var(--color-text-faint)' }}>
-                6 slots open &middot; acquiring owned-traffic properties selectively
+                6 slots open &middot; acquiring authority assets selectively
               </p>
             </div>
             <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>

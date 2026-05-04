@@ -58,20 +58,20 @@ const layers = [
   },
   {
     n: 'LAYER 03',
-    title: 'AI operating stack',
+    title: 'Operating systems',
     Icon: Brain,
-    body: 'The three-role stack, brain, hands, eyes, that lets a ten-property portfolio run without full-time employees.',
+    body: 'A proprietary AI-assisted operating model that lets a small team run a multi-property portfolio at institutional standard, without a holdco-level headcount footprint.',
     bullets: [
-      'ChatGPT Projects, strategy and memory',
-      'Manus, multi-hour execution',
-      'Claude, review and compliance',
+      'Strategy, memory, and category context',
+      'Production execution and editorial workflow',
+      'Review, compliance, and citation audit',
     ],
   },
   {
     n: 'LAYER 04',
-    title: 'Distribution & data',
+    title: 'Distribution & authority',
     Icon: Search,
-    body: 'The owned-traffic discipline. Schema, sitemaps, citations, and structured data are managed centrally so every property is built to be both indexed and quotable.',
+    body: 'The publishing discipline. Schema, sitemaps, citations, and structured data are managed centrally so every property is built to be ranked, quoted, and trusted.',
     bullets: [
       'Schema and structured-data standards',
       'Index health and crawl monitoring',
@@ -100,7 +100,8 @@ const holdcoFacts = [
   { label: 'Hold period', value: 'Indefinite' },
   { label: 'Portfolio cap', value: '10 properties' },
   { label: 'Slots filled', value: '4 of 10' },
-  { label: 'Distribution', value: 'Organic search + answer-engine citation' },
+  { label: 'Asset class', value: 'High-authority information assets' },
+  { label: 'Revenue model', value: 'Organic traffic + targeted advertising' },
   { label: 'Acquisition channel', value: 'Direct, no brokers' },
 ];
 
@@ -177,9 +178,8 @@ export default function LeadershipPage() {
           </h1>
           <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '62ch', lineHeight: 1.65 }}>
             Boost Commerce Group is private, founder-owned, and governed by a
-            five-layer model designed to operate ten owned-traffic properties
-            at institutional standard, without full-time headcount at the
-            holdco level.
+            five-layer model designed to operate a ten-property portfolio of
+            high-authority information assets at institutional standard.
           </p>
         </div>
       </section>
@@ -255,19 +255,19 @@ export default function LeadershipPage() {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
                   Amirali Karimi founded Boost Commerce Group in 2025 around
-                  a single conviction: the most valuable digital asset of the
-                  next decade is the property that search engines rank first
-                  and answer engines cite by name. Not the loudest brand. Not
-                  the largest team. The canonical source.
+                  a single conviction: the most valuable digital asset of
+                  the next decade is the property that search engines rank
+                  first and answer engines cite by name. Not the loudest
+                  brand. Not the largest team. The canonical source.
                 </p>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                  BCG was built to own a small collection of those
-                  properties, permanently. Every property in the portfolio
-                  earns its distribution from the channels where intent is
-                  highest, organic search and answer-engine citation, and is
-                  held without a horizon. The cap of ten is a ceiling, not a
-                  goal. Each slot is reserved for a property that earns it,
-                  and once a slot is filled, it stays.
+                  BCG was built to own a small portfolio of those
+                  properties, permanently. Every property earns its
+                  audience in regulated categories where authority matters,
+                  and is monetized through organic traffic and targeted
+                  advertising. The cap of ten is a ceiling, not a goal.
+                  Each slot is reserved for a property that earns it, and
+                  once a slot is filled, it stays.
                 </p>
                 <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
                   There is no fund. There is no clock. There is no plan to

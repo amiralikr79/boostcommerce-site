@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Boost Commerce Group, Owned traffic. Permanent capital.';
+export const alt = 'Boost Commerce Group, Authority compounds. Permanent capital.';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -63,7 +63,7 @@ export default function Image() {
               maxWidth: '980px',
             }}
           >
-            Owned traffic.
+            Authority compounds.
           </div>
           <div
             style={{
@@ -87,7 +87,7 @@ export default function Image() {
               marginTop: '8px',
             }}
           >
-            Holding company for digital information businesses. Indexed in search. Cited by answer engines.
+            High-authority information assets in regulated Canadian categories.
           </div>
         </div>
 

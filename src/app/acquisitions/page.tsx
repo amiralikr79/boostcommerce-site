@@ -5,7 +5,7 @@ import { Check, X, Mail, ArrowUpRight, Target, Clock, Scale } from 'lucide-react
 export const metadata: Metadata = {
   title: 'Acquisitions',
   description:
-    'What Boost Commerce Group acquires: owned-traffic digital properties with documented search visibility and answer-engine citation. $5k to $50k/mo revenue, permanent capital, no broker middlemen.',
+    'What Boost Commerce Group acquires: high-authority information assets in regulated Canadian categories. $5k to $50k/mo revenue, permanent capital, no broker middlemen.',
   alternates: { canonical: 'https://www.boostcommerce.ca/acquisitions' },
 };
 
@@ -35,14 +35,14 @@ const gridBg: React.CSSProperties = {
 };
 
 const fit = [
-  { label: 'Asset class', value: 'Owned-traffic digital property: directory, information product, lead-gen, template library, or media site' },
-  { label: 'Distribution', value: 'Organic search and/or answer-engine citation. Documented index health, ranking history, and intent-led queries.' },
-  { label: 'Geography', value: 'British Columbia, Canada (remote OK if the revenue is BC, or the category is national and search-led)' },
+  { label: 'Asset class', value: 'High-authority information asset: directory, information product, template library, lead-gen index, or category media site' },
+  { label: 'Distribution', value: 'Organic search and/or answer-engine citation. Documented index health, ranking history, and intent-led query coverage.' },
+  { label: 'Geography', value: 'British Columbia, Canada (remote acceptable if the category is national and search-led)' },
   { label: 'Revenue', value: '$5,000 to $50,000 / month, trailing 6 months' },
-  { label: 'Team', value: 'Zero or one operator. We replace employees with the AI stack.' },
-  { label: 'Tenure', value: 'Two or more years in market. We avoid pre-PMF bets.' },
-  { label: 'Growth', value: 'Flat-to-growing organic traffic. We do not need a rocket ship; we need a defensible index.' },
-  { label: 'Margins', value: 'Gross margin 60%+ after AI-stack substitution' },
+  { label: 'Monetization', value: 'Organic traffic placements and/or targeted advertising. Direct products acceptable as a complementary stream.' },
+  { label: 'Tenure', value: 'Two or more years in market. We avoid pre-product-market-fit bets.' },
+  { label: 'Growth', value: 'Flat-to-growing organic traffic. A defensible index, not a paid-acquisition funnel.' },
+  { label: 'Margins', value: 'Gross margin 60%+ once integrated into the BCG operating model' },
   { label: 'Compliance', value: 'Defensible is/is-not boundary in a regulated category' },
 ];
 
@@ -87,12 +87,11 @@ export default function AcquisitionsPage() {
               maxWidth: '20ch',
             }}
           >
-            We buy owned-traffic properties.
+            We acquire authority assets.
           </h1>
           <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '64ch', lineHeight: 1.65, marginBottom: '2rem' }}>
-            BCG operates a capped portfolio of ten digital information
-            properties, sites whose distribution is owned through search and
-            answer-engine visibility, not rented from a platform. Four slots
+            BCG operates a capped portfolio of ten high-authority
+            information assets in regulated Canadian categories. Four slots
             are filled. Six remain open. If your property fits the criteria
             below, the route is direct: one email, no brokers, no auctions,
             no IOI theatre.

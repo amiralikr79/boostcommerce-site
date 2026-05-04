@@ -6,7 +6,7 @@ import { allInsights } from '@/lib/insights';
 export const metadata: Metadata = {
   title: 'Insights',
   description:
-    "Field notes from the operator's desk at Boost Commerce Group. Essays on owned-traffic holding companies, search and answer-engine economics, AI-native operations, and the BC market.",
+    "Field notes from Boost Commerce Group. Essays on authority publishing, search and answer-engine economics, permanent capital, and the regulated-category information market.",
   alternates: { canonical: 'https://www.boostcommerce.ca/insights' },
 };
 
@@ -85,11 +85,10 @@ export default function InsightsPage() {
           >
             Insights from the operator&rsquo;s desk
           </h1>
-          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '60ch', lineHeight: 1.65 }}>
-            Essays on owned-traffic holding companies, search and
-            answer-engine economics, permanent capital, AI-native operations,
-            and what we have learned operating digital properties in British
-            Columbia.
+          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '62ch', lineHeight: 1.65 }}>
+            Essays on authority publishing, search and answer-engine
+            economics, permanent capital, and what we have learned operating
+            information assets in regulated Canadian categories.
           </p>
         </div>
       </section>

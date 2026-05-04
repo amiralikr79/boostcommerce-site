@@ -4,7 +4,7 @@ import { Mail, Linkedin, Download, ArrowUpRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Press & Media',
   description:
-    'Press kit, facts, and founder availability for Boost Commerce Group, a British Columbia holding company for owned-traffic digital properties built around search and answer-engine visibility.',
+    'Press kit, facts, and founder availability for Boost Commerce Group, a British Columbia holding company that operates a portfolio of high-authority information assets in regulated Canadian categories.',
   alternates: { canonical: 'https://www.boostcommerce.ca/press' },
 };
 
@@ -38,17 +38,18 @@ const facts = [
   { label: 'Founded', value: '2025' },
   { label: 'Headquarters', value: 'North Vancouver, British Columbia, Canada' },
   { label: 'Founder & CEO', value: 'Amirali Karimi' },
-  { label: 'Mandate', value: 'Owned-traffic digital businesses: directories, information products, lead-gen, and media properties' },
+  { label: 'Mandate', value: 'Operate a portfolio of high-authority information assets in regulated Canadian categories' },
   { label: 'Portfolio cap', value: '10 properties' },
-  { label: 'Properties indexed', value: '4 of 10' },
-  { label: 'External capital', value: 'None. Founder-owned, privately held.' },
-  { label: 'Distribution', value: 'Organic search (SEO) and answer-engine citation (AEO)' },
-  { label: 'Operating model', value: 'AI-native. Three-layer stack (ChatGPT / Manus / Claude). Zero full-time employees.' },
+  { label: 'Slots filled', value: '4 of 10' },
+  { label: 'Capital structure', value: 'Founder-owned, privately held. No external capital. No debt.' },
+  { label: 'Hold period', value: 'Indefinite' },
+  { label: 'Revenue model', value: 'Organic traffic and targeted advertising' },
   { label: 'Categories', value: 'Private lending, healthcare navigation, legal templates, industrial directory' },
+  { label: 'Provincial coverage', value: '10 of 10 Canadian provinces (via portfolio)' },
 ];
 
 const boilerplate =
-  'Boost Commerce Group is a British Columbia holding company that owns and operates a capped portfolio of digital information businesses, directories, lead-gen sites, and media properties engineered to compound through search and answer-engine traffic. Founded in 2025 by Amirali Karimi in North Vancouver, BCG is privately held, takes no external capital, and caps its portfolio at ten properties. Every property is AI-native, operated by a three-layer stack of strategy, execution, and review with zero full-time employees, and is built to be both indexed in search and cited by answer engines.';
+  'Boost Commerce Group is a British Columbia holding company that operates a portfolio of high-authority information assets in regulated Canadian categories. Founded in 2025 by Amirali Karimi in North Vancouver, BCG is privately held, takes no external capital, and caps its portfolio at ten properties. Each property is engineered to rank in search engines and to be cited by answer engines on queries with real commercial intent, and is monetized through organic traffic and targeted advertising. The portfolio is held indefinitely.';
 
 export default function PressPage() {
   return (
@@ -86,12 +87,11 @@ export default function PressPage() {
           >
             For journalists and researchers
           </h1>
-          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '60ch', lineHeight: 1.65 }}>
+          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '62ch', lineHeight: 1.65 }}>
             Facts, figures, boilerplate, and founder availability below. Use
-            anything here without asking. If you need comment on
-            owned-traffic holdcos, search and answer-engine economics,
-            AI-native operations, or the BC digital market, email the line
-            below.
+            anything here without asking. For comment on authority publishing,
+            search and answer-engine economics, the regulated-category
+            information market, or BC digital media, email the line below.
           </p>
         </div>
       </section>
@@ -149,8 +149,8 @@ export default function PressPage() {
               </p>
               <p style={{ fontSize: '0.95rem', color: 'var(--color-text-muted)', marginBottom: '1.25rem', lineHeight: 1.6 }}>
                 Founder, CEO &amp; Chair. Available for on-the-record comment
-                on owned-traffic holding companies, the economics of SEO and
-                AEO, and AI-native portfolio operations.
+                on authority publishing, the economics of regulated-category
+                information assets, and the search-and-citation media market.
               </p>
               <a
                 href="https://www.linkedin.com/in/amirali-karimi-405766199"
@@ -250,12 +250,12 @@ export default function PressPage() {
           </div>
           <div style={{ display: 'grid', gap: '1rem' }} className="md:grid-cols-2">
             {[
-              { title: 'Owned-traffic holding companies', body: 'Why media P&Ls compound when distribution is owned, the economics of an indefinite-hold portfolio of digital properties, and what changes when traffic is the moat.' },
-              { title: 'SEO and AEO economics', body: 'How search and answer engines pick sources, what makes a property both rankable and quotable, and what citation share is worth at the unit level.' },
-              { title: 'AI-native operating models', body: 'Three-layer stack (strategy, execution, review), replacing ops hires, portfolio operations at scale without full-time employees.' },
-              { title: 'Permanent capital in small-business M&A', body: 'Holdco structure, why the ten-cap, unit economics of indefinite hold vs private-equity windows.' },
+              { title: 'Authority as a media asset', body: 'Why information assets compound on a different curve than venture-funded software, and what makes a property the canonical source in a regulated category.' },
+              { title: 'Search and answer-engine economics', body: 'How search and answer engines pick sources, what citation share is worth at the property level, and where intent value is highest.' },
+              { title: 'Permanent capital in digital media', body: 'Holdco structure for information assets, the economics of indefinite hold vs private-equity windows, and why the ten-cap.' },
               { title: 'The BC private lending market', body: 'Broker funnels, rate bands by tier, what borrowers should know, regulatory boundaries.' },
               { title: 'Healthcare navigation in BC', body: 'Specialist waitlists, private clinic economics, cross-border options, what information products can and cannot do.' },
+              { title: 'Targeted advertising in regulated categories', body: 'Audience composition, intent signals, and the inventory mechanics of advertising against information assets in lending, healthcare, legal, and procurement.' },
             ].map((t) => (
               <div key={t.title} style={panel}>
                 <h3 style={{ fontSize: '1.125rem', fontWeight: 500, marginBottom: '0.5rem' }}>{t.title}</h3>

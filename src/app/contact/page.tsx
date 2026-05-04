@@ -4,7 +4,7 @@ import { Mail, Linkedin, Rocket, Users, Newspaper, Sparkles, ArrowUpRight } from
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Contact Boost Commerce Group. Acquisition intros for owned-traffic digital properties, operator inquiries, press, and general. hello@boostcommerce.ca.',
+    'Contact Boost Commerce Group. Acquisitions, advertising and partnership inquiries, press, and counsel. hello@boostcommerce.ca.',
   alternates: { canonical: 'https://www.boostcommerce.ca/contact' },
 };
 
@@ -36,15 +36,15 @@ const gridBg: React.CSSProperties = {
 const intents = [
   {
     Icon: Rocket,
-    title: "I'm building owned-traffic BCG should acquire",
-    body: 'If your property fits the three-question filter, earns durable organic search or answer-engine traffic, and you are open to permanent ownership, let us see it.',
+    title: "I'm building an authority asset BCG should acquire",
+    body: 'If your property is a high-authority information asset in a regulated Canadian category and you are open to permanent ownership, let us see it.',
     subject: 'Acquisition intro',
   },
   {
     Icon: Users,
-    title: 'I want to operate a future property',
-    body: 'BCG principals have P&L ownership, long-term economics, and own ranking and citation metrics for their property.',
-    subject: 'Operator inquiry',
+    title: "I'd like to advertise or partner",
+    body: 'For sponsored placements, display inventory, or partnership against the audiences our properties serve in regulated categories.',
+    subject: 'Advertising / partnership',
   },
   {
     Icon: Newspaper,
@@ -94,9 +94,10 @@ export default function ContactPage() {
           >
             Let&rsquo;s talk.
           </h1>
-          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '55ch', lineHeight: 1.65 }}>
-            We read everything. We respond when we can add value. Use the
-            category that fits, it routes to the right mailbox faster.
+          <p style={{ fontSize: '1.125rem', color: 'var(--color-text-muted)', maxWidth: '58ch', lineHeight: 1.65 }}>
+            One inbox. We respond to acquisitions, advertising and
+            partnership inquiries, press, and counsel. Use the category that
+            fits, it routes faster.
           </p>
         </div>
       </section>

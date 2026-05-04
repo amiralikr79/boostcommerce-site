@@ -2,9 +2,9 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
   ArrowUpRight,
-  Brain,
-  Cpu,
-  Eye,
+  Search,
+  Megaphone,
+  Package,
   Mail,
   Linkedin,
 } from 'lucide-react';
@@ -12,9 +12,9 @@ import { companies, accentHex } from '@/lib/companies';
 import { allInsights } from '@/lib/insights';
 
 export const metadata: Metadata = {
-  title: 'Boost Commerce Group | Owned traffic. Permanent capital.',
+  title: 'Boost Commerce Group | Authority compounds. Permanent capital.',
   description:
-    'A British Columbia holding company for owned-traffic digital businesses. Directories, information products, and media properties engineered for search and answer-engine visibility. Portfolio capped at ten. No external capital.',
+    'A British Columbia holding company that operates a portfolio of high-authority information assets in regulated Canadian categories. Revenue is generated through organic traffic and targeted advertising. Capped at ten properties. Held indefinitely.',
   alternates: { canonical: 'https://www.boostcommerce.ca' },
 };
 
@@ -22,12 +22,42 @@ const mono =
   'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace';
 
 const principles = [
-  { n: '01', title: 'Solve real, searchable problems', body: 'If nobody is typing the question into a search bar or asking a model this week, we are not building the answer. Demand is the prerequisite, not the bet.' },
-  { n: '02', title: 'Owned distribution, not rented', body: 'Every unit owns its domain, its index position, and its data. We do not depend on a feed, a marketplace, or a paid channel that can disappear with a policy change.' },
-  { n: '03', title: 'Indexed in search. Cited by models.', body: 'SEO and AEO are the same job: be the source the algorithm picks. Every unit is structured for both blue-link search and answer-engine citation.' },
-  { n: '04', title: 'AI-native by default', body: 'Brain, hands, and eyes are roles, not hires. Every workflow, including ranking, structuring, and citation, decomposes onto the three-layer stack.' },
-  { n: '05', title: 'Portfolio capped at 10', body: 'Ten slots is the forcing function. Anything beyond ten cannot be operated at the standard we set.' },
-  { n: '06', title: 'Compliance before scale', body: 'Every unit publishes its is-and-is-not boundaries. Scale only comes after the boundary is defensible to a regulator and to a model.' },
+  { n: '01', title: 'Authority is the asset', body: 'Each property is a category-defining information source. The asset is the trust signal that compounds with every citation, every reference link, and every direct visit.' },
+  { n: '02', title: 'Solve real, searchable problems', body: 'If nobody is typing the question into a search bar or asking a model this week, we are not building the answer. Demand is the prerequisite, not the bet.' },
+  { n: '03', title: 'Owned distribution, not rented', body: 'Every property owns its domain, its index position, and its data. We do not depend on a feed, a marketplace, or a paid channel that can disappear with a policy change.' },
+  { n: '04', title: 'Indexed in search. Cited by models.', body: 'Search and answer engines are the same job: be the source the algorithm picks. Every property is structured to be both ranked and quoted.' },
+  { n: '05', title: 'Portfolio capped at ten', body: 'Ten slots is the forcing function. Anything beyond ten cannot be operated at the institutional standard we set.' },
+  { n: '06', title: 'Compliance before scale', body: 'Every property publishes its is-and-is-not boundaries. Scale only comes after the boundary is defensible to a regulator and to a model.' },
+];
+
+const aggregateStats = [
+  { value: '04', label: 'Properties under management' },
+  { value: '04', label: 'Regulated verticals' },
+  { value: '165+', label: 'Indexed categories' },
+  { value: '16', label: 'BC cities served' },
+  { value: '10/10', label: 'Canadian provinces covered' },
+  { value: '$0', label: 'External capital' },
+];
+
+const monetization = [
+  {
+    Icon: Search,
+    eyebrow: 'Stream 01',
+    title: 'Organic traffic',
+    body: 'Readers arriving from search and answer-engine citations are routed to vetted partner products. Placements are priced by category, geography, and intent, with full disclosure on every page.',
+  },
+  {
+    Icon: Megaphone,
+    eyebrow: 'Stream 02',
+    title: 'Targeted advertising',
+    body: 'Display and sponsored placements are sold against high-intent audiences in regulated categories. Inventory is priced by audience composition; advertisers transact directly with BCG.',
+  },
+  {
+    Icon: Package,
+    eyebrow: 'Stream 03',
+    title: 'Direct products',
+    body: 'Where the use case warrants it, properties sell directly: province-aware templates, scenario-based reports, and other category-specific products owned and operated by the property.',
+  },
 ];
 
 const eyebrow: React.CSSProperties = {
@@ -166,7 +196,7 @@ export default function Home() {
                 backgroundClip: 'text',
               }}
             >
-              Owned traffic.
+              Authority compounds.
             </span>
             <br />
             Permanent capital.
@@ -175,16 +205,16 @@ export default function Home() {
             style={{
               fontSize: 'clamp(1.0625rem, 1.5vw, 1.25rem)',
               color: 'var(--color-text-muted)',
-              maxWidth: '60ch',
+              maxWidth: '62ch',
               lineHeight: 1.65,
               marginBottom: '2.5rem',
             }}
           >
-            Boost Commerce Group is a British Columbia holding company that
-            owns and operates a capped portfolio of digital information
-            businesses, directories, lead-gen sites, and media properties
-            engineered to compound through search and answer-engine traffic.
-            Ten slots. No external capital. No clock.
+            Boost Commerce Group operates a portfolio of high-authority
+            information assets in regulated Canadian categories. Revenue is
+            generated through organic traffic and targeted advertising. The
+            portfolio is privately held, capped at ten properties, and
+            held indefinitely.
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '2.5rem' }}>
             <Link href="/companies" style={btnPrimary}>
@@ -194,47 +224,75 @@ export default function Home() {
               Read thesis
             </Link>
           </div>
-          <p style={{ fontFamily: mono, fontSize: '0.8rem', color: 'var(--color-text-faint)' }}>
-            bcg@north-vancouver:~$ ls ./properties &nbsp;&rarr;&nbsp; 4 indexed / 10 slots
-          </p>
+          <div
+            style={{
+              display: 'flex',
+              gap: '1.25rem',
+              flexWrap: 'wrap',
+              fontFamily: mono,
+              fontSize: '0.78rem',
+              color: 'var(--color-text-faint)',
+              letterSpacing: '0.04em',
+            }}
+          >
+            <span>4 properties</span>
+            <span style={{ color: 'var(--color-divider)' }}>/</span>
+            <span>4 regulated verticals</span>
+            <span style={{ color: 'var(--color-divider)' }}>/</span>
+            <span>10 of 10 provinces covered</span>
+          </div>
         </div>
       </section>
 
-      {/* METRIC STRIP */}
-      <section style={{ borderBottom: '1px solid var(--color-border)', paddingBlock: '2.5rem' }}>
+      {/* AGGREGATE CREDIBILITY STRIP */}
+      <section style={{ borderBottom: '1px solid var(--color-border)', paddingBlock: 'clamp(2.5rem, 5vw, 4rem)' }}>
         <div className="container">
+          <p style={{ ...eyebrow, marginBottom: '1.5rem' }}>Portfolio in aggregate</p>
           <div
             style={{
               display: 'grid',
-              gap: '0.75rem',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+              gap: '1px',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+              backgroundColor: 'var(--color-border)',
+              border: '1px solid var(--color-border)',
+              borderRadius: 'var(--radius-lg)',
+              overflow: 'hidden',
             }}
           >
-            {companies.map((co) => (
-              <div key={co.slug} style={{ ...panel, padding: '1.25rem' }}>
-                <p style={{ ...eyebrow, color: accentHex[co.accent], marginBottom: '0.5rem' }}>{co.role}</p>
+            {aggregateStats.map((s) => (
+              <div
+                key={s.label}
+                style={{
+                  backgroundColor: 'var(--color-surface)',
+                  padding: '1.5rem 1.25rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '0.4rem',
+                }}
+              >
                 <p
                   style={{
-                    fontSize: '0.875rem',
-                    color: 'var(--color-text-muted)',
-                    marginBottom: '0.75rem',
+                    fontFamily: 'Boska, Georgia, serif',
+                    fontSize: 'clamp(2rem, 3.2vw, 2.6rem)',
+                    fontWeight: 500,
+                    color: 'var(--color-text)',
+                    lineHeight: 1.05,
+                    letterSpacing: '-0.02em',
                   }}
                 >
-                  {co.name}
+                  {s.value}
                 </p>
                 <p
                   style={{
                     fontFamily: mono,
-                    fontSize: '1.65rem',
-                    fontWeight: 500,
-                    color: 'var(--color-text)',
-                    lineHeight: 1.1,
+                    fontSize: '0.7rem',
+                    color: 'var(--color-text-faint)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.12em',
+                    lineHeight: 1.4,
                   }}
                 >
-                  {co.primaryMetric.value}
-                </p>
-                <p style={{ fontSize: '0.75rem', color: 'var(--color-text-faint)', marginTop: '0.25rem' }}>
-                  {co.primaryMetric.label}
+                  {s.label}
                 </p>
               </div>
             ))}
@@ -401,33 +459,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* AI STACK */}
+      {/* MONETIZATION */}
       <section style={{ paddingBlock: 'clamp(4rem, 7vw, 6rem)', borderBottom: '1px solid var(--color-border)' }}>
         <div className="container">
           <div style={{ marginBottom: '2.5rem' }}>
-            <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>AI-native operations</p>
+            <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Revenue model</p>
             <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)', fontWeight: 500 }}>
-              How BCG actually operates
+              How information assets compound
             </h2>
-            <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', maxWidth: '60ch', marginTop: '1rem', lineHeight: 1.65 }}>
-              Every property runs on the same three-layer stack. No full-time
-              employees. The same stack writes the content, structures the
-              data, audits every claim, and ships the page that search engines
-              rank and answer engines cite.
+            <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', maxWidth: '62ch', marginTop: '1rem', lineHeight: 1.65 }}>
+              Each property generates revenue across three streams, in the
+              proportion that fits its category and audience. Every placement
+              is disclosed; every advertiser transacts directly with BCG.
             </p>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginBottom: '2rem' }}>
-            {[
-              { layer: 'LAYER 01', title: 'BRAIN', tool: 'ChatGPT Projects', body: 'Strategy, memory, and context. Holds every prior decision so new decisions are consistent with the unit\u2019s history.', Icon: Brain },
-              { layer: 'LAYER 02', title: 'HANDS', tool: 'Manus', body: 'Execution. Opens the tools, drafts the artifacts, follows multi-hour workflows to completion without supervision.', Icon: Cpu },
-              { layer: 'LAYER 03', title: 'EYES', tool: 'Claude', body: 'Review. Verifies correctness, enforces compliance boundaries, kills drafts that cross the is/is-not line.', Icon: Eye },
-            ].map((l) => (
-              <div key={l.layer} style={{ ...panel, display: 'grid', gap: '1.25rem', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gap: '1rem' }} className="md:grid-cols-3">
+            {monetization.map((m) => (
+              <div
+                key={m.eyebrow}
+                style={{
+                  ...panel,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '1rem',
+                  minHeight: '240px',
+                }}
+              >
                 <div
                   style={{
-                    width: '52px',
-                    height: '52px',
+                    width: '44px',
+                    height: '44px',
                     borderRadius: 'var(--radius-md)',
                     backgroundColor: 'var(--color-primary-highlight)',
                     color: 'var(--color-primary)',
@@ -436,66 +498,37 @@ export default function Home() {
                     justifyContent: 'center',
                   }}
                 >
-                  <l.Icon size={22} />
+                  <m.Icon size={20} />
                 </div>
                 <div>
-                  <p style={{ fontFamily: mono, fontSize: '0.72rem', color: 'var(--color-text-faint)', letterSpacing: '0.14em', marginBottom: '0.25rem' }}>
-                    {l.layer}
+                  <p style={{ fontFamily: mono, fontSize: '0.72rem', color: 'var(--color-text-faint)', letterSpacing: '0.14em', marginBottom: '0.4rem' }}>
+                    {m.eyebrow}
                   </p>
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: 500, marginBottom: '0.25rem' }}>
-                    {l.title} &middot; <span style={{ fontFamily: mono, fontSize: '0.95rem', color: 'var(--color-text-muted)' }}>{l.tool}</span>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 500, marginBottom: '0.5rem', letterSpacing: '-0.01em' }}>
+                    {m.title}
                   </h3>
-                  <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)', lineHeight: 1.6 }}>{l.body}</p>
+                  <p style={{ fontSize: '0.9375rem', color: 'var(--color-text-muted)', lineHeight: 1.65 }}>
+                    {m.body}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div
+          <p
             style={{
-              backgroundColor: 'var(--color-surface-offset)',
-              border: '1px solid var(--color-border)',
-              borderRadius: 'var(--radius-lg)',
-              padding: '1.5rem',
+              marginTop: '2rem',
               fontFamily: mono,
-              fontSize: '0.875rem',
-              lineHeight: 1.7,
-              overflowX: 'auto',
+              fontSize: '0.78rem',
+              color: 'var(--color-text-faint)',
+              letterSpacing: '0.04em',
             }}
           >
-            <div style={{ color: 'var(--color-text-faint)' }}>// bcg-ops.ts</div>
-            <div>
-              <span style={{ color: 'var(--color-primary)' }}>const</span>{' '}
-              <span style={{ color: 'var(--color-text)' }}>unit</span>{' '}
-              ={' '}
-              <span style={{ color: 'var(--color-primary)' }}>await</span>{' '}
-              <span style={{ color: 'var(--color-text)' }}>brain</span>.
-              <span style={{ color: 'var(--color-text-muted)' }}>strategize</span>
-              (<span style={{ color: 'var(--color-text)' }}>problem</span>);
-            </div>
-            <div>
-              <span style={{ color: 'var(--color-primary)' }}>const</span>{' '}
-              <span style={{ color: 'var(--color-text)' }}>build</span>{' '}
-              ={' '}
-              <span style={{ color: 'var(--color-primary)' }}>await</span>{' '}
-              <span style={{ color: 'var(--color-text)' }}>hands</span>.
-              <span style={{ color: 'var(--color-text-muted)' }}>execute</span>
-              (<span style={{ color: 'var(--color-text)' }}>unit</span>.plan);
-            </div>
-            <div>
-              <span style={{ color: 'var(--color-primary)' }}>const</span>{' '}
-              <span style={{ color: 'var(--color-text)' }}>verify</span>{' '}
-              ={' '}
-              <span style={{ color: 'var(--color-primary)' }}>await</span>{' '}
-              <span style={{ color: 'var(--color-text)' }}>eyes</span>.
-              <span style={{ color: 'var(--color-text-muted)' }}>review</span>
-              (<span style={{ color: 'var(--color-text)' }}>build</span>);
-            </div>
-            <div>
-              <span style={{ color: 'var(--color-primary)' }}>return</span>{' '}
-              verify.ok ? ship(build) : iterate();
-            </div>
-          </div>
+            For advertising and partnership inquiries:{' '}
+            <a href="mailto:hello@boostcommerce.ca" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
+              hello@boostcommerce.ca
+            </a>
+          </p>
         </div>
       </section>
 
@@ -514,7 +547,7 @@ export default function Home() {
             <div>
               <p style={{ ...eyebrow, marginBottom: '0.5rem' }}>Thesis &middot; About BCG</p>
               <h2 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)', fontWeight: 500, marginBottom: '1rem' }}>
-                A holding company for owned traffic.
+                Authority is the asset.
               </h2>
               <Link
                 href="/leadership"
@@ -531,25 +564,25 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text)', lineHeight: 1.75 }}>
-                Boost Commerce Group is a British Columbia holding company
-                founded in 2025 by Amirali Karimi in North Vancouver. We
-                acquire, build, and operate digital information businesses
-                with one common trait: durable owned traffic. Each property
-                is engineered to rank in search engines and to be cited by
-                answer engines on queries with real commercial intent.
+                Boost Commerce Group was founded in 2025 to operate a small,
+                permanent portfolio of high-authority information assets in
+                regulated Canadian categories. Each property is engineered to
+                rank in search engines and to be cited by answer engines on
+                queries where intent is highest, and to compound in trust
+                with every reference link, citation, and direct visit it
+                earns.
               </p>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                The portfolio is capped at ten and held indefinitely. No
-                external capital. No investors. No clock. The cap is the
-                forcing function that keeps the bar high: each slot is an
-                expensive decision, so each property must clear three
-                questions before it earns one.
+                Revenue is generated through organic traffic and targeted
+                advertising. The portfolio is privately held, capped at ten
+                properties, and held indefinitely. No external capital. No
+                investors. No clock.
               </p>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.75 }}>
-                Does it solve a real, searchable problem with documented
-                intent? Can it reach $1,000 per month within twelve months on
-                owned traffic alone? Can it operate without full-time
-                employees? Three yes answers, or the prospect does not pass.
+                Each slot is reserved for a property that earns it through
+                documented authority, regulatory defensibility, and a
+                category we expect to still matter in twenty years. Once a
+                slot is filled, it stays.
               </p>
             </div>
           </div>
@@ -639,15 +672,14 @@ export default function Home() {
               }}
             />
             <div style={{ position: 'relative', maxWidth: '60ch' }}>
-              <p style={{ ...eyebrow, marginBottom: '0.75rem' }}>Let&apos;s talk</p>
+              <p style={{ ...eyebrow, marginBottom: '0.75rem' }}>Inquiries</p>
               <h2 style={{ fontSize: 'clamp(1.875rem, 4vw, 3rem)', fontWeight: 500, marginBottom: '1.25rem', letterSpacing: '-0.01em' }}>
-                Building something BCG should know about?
+                Acquisitions, advertising, and counsel.
               </h2>
               <p style={{ fontSize: '1.0625rem', color: 'var(--color-text-muted)', lineHeight: 1.65, marginBottom: '2rem' }}>
-                We read everything. Operators, founders of acquisition
-                candidates, and counsel, if you fit one of the ten slots, want
-                to run one, or are building owned traffic in a category we
-                cover, send a note.
+                We respond to founders of acquisition candidates in the
+                categories we cover, advertisers and partners with interest in
+                our regulated audiences, and counsel. One email is enough.
               </p>
               <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                 <a href="mailto:hello@boostcommerce.ca" style={btnPrimary}>
