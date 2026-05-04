@@ -220,7 +220,7 @@ export default function Home() {
             <Link href="/companies" style={btnPrimary}>
               View portfolio <ArrowUpRight size={16} />
             </Link>
-            <Link href="/insights/permanent-capital-thesis" style={btnGhost}>
+            <Link href="/insights/authority-is-the-asset" style={btnGhost}>
               Read thesis
             </Link>
           </div>
